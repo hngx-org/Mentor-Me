@@ -5,6 +5,7 @@
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Colors](#colors)
 - [Contributing](#contributing)
 - [Merging](#merging)
 - [API](#api)
@@ -40,6 +41,55 @@ bun dev
 - Hanken Grotesk ---> usage "font-hanken"
 - Gladiora ---> usage "font-gladiora"
 - Inter ---> usage "font-Inter"
+
+# Colors
+
+colors are arranged based on the [Figma Style Guide](https://www.figma.com/file/GJJibKX5bbk6y5RvuPs8aF/Mentor-Me?type=design&node-id=1266-18028&mode=design&t=Ue0EW9TjbNDK1L1R-0)
+
+```js
+Color     Code
+
+NeutalBase:"#020202",
+Neutra50: "#2c2c2c",
+Neutra40: "#565656",
+Neutra30: "#808080",
+Neutra20: "#ababab",
+Neutra10: "#cccccc",
+Accent1: "#008080",
+Accent2: "#00cccc",
+Accent3: "#00ffff",
+Accent4: "#7fffff",
+Accent5: "#b2ffff",
+Accent6: "#e5ffff",
+SuccessBase:"#0f973d",
+Success10: "#cfead8",
+Success20: "#afdcbe",
+Success30: "#87cb93",
+Success40: "#5fba7e",
+Success50: "#37a85d",
+Success60: "#0d7e33",
+Success70: "#0a6529",
+Success80: "#084c1f",
+Success100: "#031e0c",
+ErrorBase: "#d42620",
+Error10: "#f6d4d2",
+Error20: "#f1b7b5",
+Error30: "#e9928f",
+Error40: "#e26e6a",
+Error50: "#db4a45",
+Error60: "#b1201b",
+Error70: "#8d1915",
+Error80: "#6a1310",
+Error90: "#450d0b",
+Error100: "#2a0806",
+
+```
+
+_Example Usage_
+
+```html
+<p className="font-SuccessBase">Example</p>
+```
 
 ## Dev Server
 
