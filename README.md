@@ -88,7 +88,7 @@ Error100: "#2a0806",
 _Example Usage_
 
 ```html
-<p className="font-SuccessBase">Example</p>
+<p className="text-SuccessBase bg-SuccessBase">Example</p>
 ```
 
 ## Dev Server
