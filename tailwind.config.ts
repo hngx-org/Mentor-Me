@@ -1,20 +1,55 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
-  },
-  plugins: [],
-}
-export default config
+	content: [
+		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
+		"./components/**/*.{js,ts,jsx,tsx,mdx}",
+		"./app/**/*.{js,ts,jsx,tsx,mdx}",
+	],
+	theme: {
+		extend: {
+			colors: {
+				NeutalBase: "#020202",
+				Neutra50: "#2c2c2c",
+				Neutra40: "#565656",
+				Neutra30: "#808080",
+				Neutra20: "#ababab",
+				Neutra10: "#cccccc",
+				Accent1: "#008080",
+				Accent2: "#00cccc",
+				Accent3: "#00ffff",
+				Accent4: "#7fffff",
+				Accent5: "#b2ffff",
+				Accent6: "#e5ffff",
+				SuccessBase: "#0f973d",
+				Success10: "#cfead8",
+				Success20: "#afdcbe",
+				Success30: "#87cb93",
+				Success40: "#5fba7e",
+				Success50: "#37a85d",
+				Success60: "#0d7e33",
+				Success70: "#0a6529",
+				Success80: "#084c1f",
+				Success100: "#031e0c",
+				ErrorBase: "#d42620",
+				Error10: "#f6d4d2",
+				Error20: "#f1b7b5",
+				Error30: "#e9928f",
+				Error40: "#e26e6a",
+				Error50: "#db4a45",
+				Error60: "#b1201b",
+				Error70: "#8d1915",
+				Error80: "#6a1310",
+				Error90: "#450d0b",
+				Error100: "#2a0806",
+			},
+			fontFamily: {
+				Gladiora: ["var(--font-gladiora)", "sans-serif"],
+				Inter: ["var(--font-inter)", "sans-serif"],
+				Hanken: ["var(--font-hanken)", "sans-serif"],
+			},
+		},
+	},
+	plugins: [],
+};
+export default config;
