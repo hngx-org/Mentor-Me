@@ -85,11 +85,27 @@ Error100: "#2a0806",
 
 ```
 
-_Example Usage_
+### _Example Usage_
+
+for color.
 
 ```html
-<p className="text-SuccessBase bg-SuccessBase">Example</p>
+<p className="text-SuccessBase">Example</p>
 ```
+
+for background
+
+```html
+<p className="bg-SuccessBase">Example</p>
+```
+
+for border
+
+```html
+<p className="border-SuccessBase">Example</p>
+```
+
+_you get the point_
 
 ## Dev Server
 
