@@ -6,6 +6,11 @@
 
 :root {
   --font-gladiora: "Gladiora", sans-serif;
+  --font-gladiora: "Gladiora", sans-serif;
+}
+
+* {
+  list-style-type: none;
 }
 
 .hide-message-layout-scroll::-webkit-scrollbar {
