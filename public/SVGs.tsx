@@ -102,3 +102,72 @@ export const CartOutlineIcon = (props: SVGProps<SVGSVGElement>) => (
 		/>
 	</svg>
 );
+
+export const HomeIcon = (props: SVGProps<SVGSVGElement>) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={20}
+		height={20}
+		fill="none"
+		{...props}
+	>
+		<path
+			stroke="#fff"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			strokeWidth={1.5}
+			d="M8.392 2.35 2.617 6.975c-.65.516-1.067 1.608-.925 2.425L2.8 16.033c.2 1.183 1.333 2.141 2.533 2.141h9.334c1.191 0 2.333-.966 2.533-2.141L18.308 9.4c.134-.817-.283-1.909-.925-2.425l-5.775-4.617c-.891-.717-2.333-.717-3.216-.008Z"
+		/>
+		<path
+			stroke="#fff"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			strokeWidth={1.5}
+			d="M10 12.917a2.083 2.083 0 1 0 0-4.167 2.083 2.083 0 0 0 0 4.167Z"
+		/>
+	</svg>
+);
+
+export const MessageIcon = (props: SVGProps<SVGSVGElement>) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={20}
+		height={20}
+		fill="none"
+		{...props}
+	>
+		<path
+			stroke="#fff"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			strokeMiterlimit={10}
+			strokeWidth={1.5}
+			d="M7.083 15.834h-.417c-3.333 0-5-.834-5-5V6.667c0-3.333 1.667-5 5-5h6.667c3.333 0 5 1.667 5 5v4.167c0 3.333-1.667 5-5 5h-.417a.845.845 0 0 0-.667.333L11 17.834c-.55.733-1.45.733-2 0l-1.25-1.667c-.133-.183-.441-.333-.666-.333Z"
+		/>
+		<path
+			stroke="#fff"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			strokeWidth={2}
+			d="M13.33 9.167h.008M9.996 9.167h.008M6.662 9.167h.008"
+		/>
+	</svg>
+);
+
+export const BookingIcon = (props: SVGProps<SVGSVGElement>) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={20}
+		height={20}
+		fill="none"
+		{...props}
+	>
+		<path
+			stroke="#fff"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			strokeWidth={1.5}
+			d="M7.5 18.334h5c4.166 0 5.833-1.667 5.833-5.834v-5c0-4.166-1.667-5.833-5.834-5.833h-5c-4.166 0-5.833 1.667-5.833 5.833v5c0 4.167 1.667 5.834 5.833 5.834ZM13.125 7.5h-6.25M13.125 12.5h-6.25"
+		/>
+	</svg>
+);
