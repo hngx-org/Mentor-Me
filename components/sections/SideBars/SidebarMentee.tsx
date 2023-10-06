@@ -6,7 +6,7 @@ import { sidebarMenteeLinks } from "@/constants/constants";
 export default function SidebarMentee({
 	light,
 	path,
-}: SideBarMentorProps & { path: string | null }) {
+}: SideBarMentorProps & { path?: string | null | undefined }) {
 	return (
 		<section
 			className={`hidden w-[274px]  p-7 min-h-screen h-full fixed lg:flex left-0 top-0 ${
