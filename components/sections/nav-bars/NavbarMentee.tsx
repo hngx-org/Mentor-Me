@@ -3,7 +3,7 @@ import { NotificationBingIcon } from "@/public/SVGs";
 import Image from "next/image";
 
 export type NavbarMenteeProps = {
-	path?: string;
+	path?: string | null;
 	username?: string;
 	imgSrc?: string;
 	jobTitle?: string;
@@ -16,7 +16,7 @@ export const NavbarMentee = ({
 }: NavbarMenteeProps) => {
 	return (
 		<nav className="flex w-full justify-between px-3 items-center  py-4 border-b-2 border-gray-200">
-			<h3 className="  font-Hanken font-[700] text-[24px]">
+			<h3 className="uppercase  font-Hanken font-[700] text-[24px]">
 				{path ? path : "[PathName Here]"}
 			</h3>
 			<div className="flex items-center gap-3">

@@ -35,8 +35,6 @@ export default function Landing() {
 			</div>
 			<SidebarMentor />
 			<SidebarMentor light={true} />
-			<SidebarMentee />
-			<SidebarMentee light={true} />
 		</>
 	);
 }
