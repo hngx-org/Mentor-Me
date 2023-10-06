@@ -2,20 +2,21 @@ import MessageCard from "./Message";
 import MessageBubble from "./MessageBubble";
 import MessageUserProfile from "./UserProfile";
 
+// adjust height when nav and sidebar availabe
 type MessagesLayoutProps = {
   children: React.ReactNode;
 };
 
 export default function MessagesLayout() {
   return (
-    <div className="h-[100vh] max-h-[100vh] w-[100%] px-4 pt-4 overflow-hidden">
+    <div className="h-[100vh] max-h-[100vh] w-[100%] pl-4 pt-4 overflow-hidden">
       <div className="flex w-[100%] justify-center h-[100%]">
         <div className="border border-b-[0] rounded-t-[8px]  w-[305px] h-[100%] over">
           <div className="p-4  flex flex-col space-y-5 items-center">
             <p> button here</p>
             <p> search input here</p>
           </div>
-          <div className="overflow-scroll h-[100%] py-4">
+          <div className="overflow-scroll hide-message-layout-scroll h-[100%] py-4">
             <MessageCard userName="Patricia Flow" />
             <MessageCard userName="Mauteen" />
             <MessageCard userName="Naomi Hyde" />
@@ -26,9 +27,16 @@ export default function MessagesLayout() {
             <MessageCard userName="Nuga Olaoluwa" />
           </div>
         </div>
-        <div className="p-4  flex-1 mb-10">
-          <MessageUserProfile userName="Patricia flow" userId="" userImage="" />
-          <div className="max-h-[80%] overflow-scroll  ">
+        <div className="flex-1 ">
+          <div className="px-4">
+            <MessageUserProfile
+              userName="Patricia flow"
+              userId=""
+              userImage=""
+            />
+          </div>
+
+          <div className="max-h-[70%] hide-message-layout-scroll overflow-y-scroll px-4 ">
             <MessageBubble
               message={"sent"}
               timeStamp="2:35pm"
@@ -66,16 +74,21 @@ export default function MessagesLayout() {
               timeStamp="2:37pm"
             />
           </div>
+          <MessageLHSInput />
         </div>
       </div>
     </div>
   );
 }
 
-export function MessagesBodyLayout() {
+// switch bg-neutra to actual color when available
+
+export function MessageLHSInput() {
   return (
-    <div className="flex w-[100%]">
-      <div></div>
+    <div className="flex w-[100%] h-[95px] bg-Neutra10">
+      <div>
+        <p> input here</p>
+      </div>
     </div>
   );
 }
