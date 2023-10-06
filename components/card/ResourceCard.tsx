@@ -50,7 +50,7 @@ const ResourceCard = ({
           <span> {reviews} reviews</span>
         </div>
         <div className="flex gap-4 mb-4">
-          <Link href={`/resources/explore/${id}`}>
+          <Link href={`/resource/explore/${id}`}>
             <button className="font-Inter w-[112px] text-white rounded-lg bg-NeutalBase h-10 mb-4">
               Buy Now
             </button>
