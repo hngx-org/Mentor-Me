@@ -1,7 +1,7 @@
 import React from "react";
 
-import { SideBarIcons } from "@/public/assets/Icons";
 import { SideBarMentorProps } from "./SidebarMentor";
+import { SideBarIcons } from "@/public/assets/icons";
 
 export default function SidebarMentee({ light }: SideBarMentorProps) {
 	return (
