@@ -1,12 +1,8 @@
-import Navbar from "@/components/sections/Navbar";
-import Sidebar from "@/components/sections/Sidebar";
+import Navbar from "@/components/sections/nav-bars/NavbarMentee";
 
 const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
 	return (
 		<div>
-			<div>
-				<Sidebar />
-			</div>
 			<main>
 				<Navbar />
 
