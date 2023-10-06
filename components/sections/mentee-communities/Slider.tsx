@@ -26,7 +26,7 @@ const Slider: React.FC<Props> = ({ slideInfo }) => {
 
   return (
     <div
-      className="discussion-section relative lg:mt-[98px] md:mt[40px] mt-[23px]  flex flex-col mx-[6vw] 
+      className="discussion-section relative lg:mt-[98px] md:mt[40px] mt-[23px]  flex flex-col mx-[2vw] 
 text-NeutalBase font-Inter overflow-hidden "
       // style={{marginLeft:`${}`}}
     >
