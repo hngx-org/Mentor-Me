@@ -1,4 +1,3 @@
-import Footer from "@/components/sections/Footer";
 import HeaderAfterSignUp from "@/components/sections/HeaderAfterSignUp";
 import HeaderBeforeSignUp from "@/components/sections/HeaderBeforeSignUp";
 import Button from "@/components/ui/Button";
@@ -6,6 +5,7 @@ import Shoppimg from "./../../public/assets/shopping-cart.png";
 import Image from "next/image";
 import SidebarMentor from "@/components/sections/SideBars/SidebarMentor";
 import SidebarMentee from "@/components/sections/SideBars/SidebarMentee";
+import { DashboardNav } from "../(dashboard)/DashbordNav";
 
 export default function Landing() {
   return (
@@ -35,7 +35,10 @@ export default function Landing() {
         </Button>
       </div>
       <SidebarMentor />
+      <SidebarMentor light={true} />
       <SidebarMentee />
+      <SidebarMentee light={true} />
+      <DashboardNav />
     </>
   );
 }
