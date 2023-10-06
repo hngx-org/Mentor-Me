@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Messages() {
+export default function MenteeMessages() {
 	return <div>Messages Page</div>;
 }
