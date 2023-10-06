@@ -1,5 +1,9 @@
 import React from "react";
-
+import MessagesLayout from "../messages/components/message/MessagesLayout";
 export default function MenteeMessages() {
-	return <div>Messages Page</div>;
+  return (
+    <div>
+      <MessagesLayout />
+    </div>
+  );
 }
