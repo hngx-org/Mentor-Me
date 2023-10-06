@@ -5,5 +5,9 @@
 @tailwind utilities;
 
 :root {
-	--font-gladiora: "Gladiora", sans-serif;
+  --font-gladiora: "Gladiora", sans-serif;
+}
+
+* {
+  list-style-type: none;
 }
