@@ -3,7 +3,7 @@ import React from "react";
 
 import Shoppimg from "./../../public/assets/icons/shopping-cart.png";
 import notification from "./../../public/assets/icons/notification-bing.png";
-import profile from "../../public/assets/icons/Image.png";
+import profile from "../../public/assets/images/Image.png";
 
 export default function HeaderAfterSignUp() {
 	return (
