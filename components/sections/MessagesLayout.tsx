@@ -4,27 +4,31 @@ import MessageBubble from "../ui/messages/MessageBubble";
 import MessageUserProfile from "../ui/messages/UserProfile";
 import MessageCard from "../cards/MessageCard";
 import { MenteeMessageInput } from "../ui/inputs/MenteeMessagesInput";
+import { SearchInput } from "../ui/inputs/SearchInput";
 
 // adjust height when nav and sidebar availabe
 type MessagesLayoutProps = {
   children: React.ReactNode;
 };
 
+// button can't grow beyound the set size, as it has a fixed width
+// would update button as soon as it's fixed
+
 export default function MessagesLayout() {
   return (
     <div className="md:h-[83dvh]  w-[100%] pl-4 pt-4  overflow-clip lg:h-[90dvh]">
       <div className="flex w-[100%] justify-center h-[100%]">
         <div className="border border-b-[0] rounded-t-[8px]  w-[305px] h-[100%] pb-10">
-          <div className="py-5  flex flex-col space-y-5 items-center  w-[100%] ">
+          <div className="py-5  flex flex-col space-y-5 items-center  w-[100%] px-4 ">
             <Button
               variant="primary"
               type="button"
-              title="Write Message"
-              className=" px-2 py-2"
+              title="Write Message "
+              className=" px-2 py-2 w-[100%]"
             />
-            <p> search input here</p>
+            <SearchInput />
           </div>
-          <div className="overflow-y-scroll hide-message-layout-scroll h-[85%]">
+          <div className="overflow-y-scroll hide-message-layout-scroll h-[83%]">
             <MessageCard userName="Patricia Flow" />
             <MessageCard userName="Mauteen" />
             <MessageCard userName="Naomi Hyde" />

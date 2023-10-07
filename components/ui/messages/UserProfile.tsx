@@ -1,4 +1,4 @@
-import { CallIcon, VideoIcon } from "@/public/assets/icons";
+import { VideoIcon, CallIcon } from "@/public/SVGs";
 import Image from "next/image";
 type MessageUserProfileProps = {
   userImage: string;

@@ -1,11 +1,9 @@
 import {
-  EmojiIcon,
-  MicrophoneIcon,
-  DocumentIcon,
-  AddIconCircle,
   AttachIcon,
   CameraIcon,
-} from "@/public/assets/icons";
+  EmojiIcon,
+  MicrophoneIcon,
+} from "@/public/SVGs";
 
 export function VCInput() {
   return (

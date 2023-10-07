@@ -1,14 +1,14 @@
-import Image from "next/image";
 import VCMessageBubble from "./vc-message-bubble";
-import {
-  AddIconCircle,
-  CallIcon,
-  MicrophoneIcon,
-  RecordIcon,
-  VideoIcon,
-} from "@/public/assets/icons";
+
 import { VCIconsContainer } from "./VcIconsContainer";
 import { VCInput } from "../inputs/VCInput";
+import {
+  RecordIcon,
+  AddIconCircle,
+  MicrophoneIcon,
+  CallIcon,
+  VideoIcon,
+} from "@/public/SVGs";
 
 export default function VCLayout() {
   return (

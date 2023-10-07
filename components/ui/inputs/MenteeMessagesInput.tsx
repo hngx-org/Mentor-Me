@@ -1,9 +1,9 @@
 import {
+  AddIconCircle,
+  DocumentIcon,
   EmojiIcon,
   MicrophoneIcon,
-  DocumentIcon,
-  AddIconCircle,
-} from "@/public/assets/icons";
+} from "@/public/SVGs";
 
 export function MenteeMessageInput() {
   return (
