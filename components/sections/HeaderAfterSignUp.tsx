@@ -3,6 +3,7 @@ import { DashboardMenteeNavImg } from "@/public";
 import React from "react";
 
 import { BulletIcon, NotifyIcon, ProfileIcon } from "@/public/SVGs";
+import { SideBarIcons } from "@/public/assets/Icons";
 
 interface Steps {
   step: number;
