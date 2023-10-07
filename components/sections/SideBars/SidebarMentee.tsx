@@ -34,7 +34,7 @@ export default function SidebarMentee({
                         : !light && path === link.label.toLowerCase()
                         ? " bg-Neutra50"
                         : ""
-                    } rounded-[5px] p-2`}
+                    } rounded-[5px] p-2 items-center`}
                   >
                     <span>{light ? link.iconLight : link.iconDark}</span>
                     <span

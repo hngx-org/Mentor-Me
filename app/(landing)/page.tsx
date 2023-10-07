@@ -5,6 +5,7 @@ import Shoppimg from "./../../public/assets/Icons/shopping-cart.png";
 import Image from "next/image";
 import SidebarMentor from "@/components/sections/SideBars/SidebarMentor";
 import SidebarMentee from "@/components/sections/SideBars/SidebarMentee";
+import { MobileSideBar } from "@/components/sections/SideBars/MobileSiderBar";
 
 export default function Landing() {
   return (
@@ -34,9 +35,11 @@ export default function Landing() {
         </Button>
       </div> */}
 
-      <SidebarMentee />
+      {/* <SidebarMentee />
 
-      {/* <SidebarMentor /> */}
+      <MobileSideBar /> */}
+      <HeaderAfterSignUp />
+      {/* <HeaderBeforeSignUp /> */}
     </>
   );
 }
