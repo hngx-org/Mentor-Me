@@ -1,6 +1,6 @@
 "use client";
 
-import { SideBarIcons } from "@/public/assets/icons";
+import { SideBarIcons } from "@/public/assets/Icons";
 
 export type SideBarMentorProps = {
   light?: boolean;

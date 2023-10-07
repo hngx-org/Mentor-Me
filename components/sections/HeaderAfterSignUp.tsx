@@ -1,7 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import notification from "./../../public/assets/icons/notification-bing.png";
-import profile from "../../public/assets/images/Image.png";
 import { SideBarIcons } from "@/public/assets/Icons";
 import { BulletIcon } from "@/public/SVGs";
 
