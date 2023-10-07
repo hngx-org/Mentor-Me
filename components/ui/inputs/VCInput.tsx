@@ -8,7 +8,7 @@ import {
 export function VCInput() {
   return (
     <div className="flex items-center space-x-2 w-[100%]  h-fit px-4">
-      <div className="flex  py-2 px-2 space-between items-center border-[0.5px] border-Neutra20 rounded-[24px] w-[100%]">
+      <div className="flex  py-2 px-2 space-between items-center border-[0.5px] border-Neutra20 rounded-[20px] w-[100%]">
         <div className="h-[38px] bg-white grow rounded-full p-4 flex items-center">
           <EmojiIcon />
           <input

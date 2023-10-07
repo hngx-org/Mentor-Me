@@ -52,7 +52,11 @@ function VCLHS() {
           <VCIconsContainer padding={"p-2"}>
             <MicrophoneIcon color="white" />
           </VCIconsContainer>
-          <VCIconsContainer padding={"p-2"}>
+          <VCIconsContainer
+            padding={"p-2"}
+            bgColor="ErrorBase"
+            border="border border-[4px] border-ErrorBase"
+          >
             <CallIcon color="#fff" />
           </VCIconsContainer>
           <VCIconsContainer padding={"p-2"}>
