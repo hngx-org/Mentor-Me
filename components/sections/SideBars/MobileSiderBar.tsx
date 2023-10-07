@@ -1,5 +1,10 @@
+import {
+	CommunitiesIcon,
+	HomeIcon,
+	MobileSession,
+	ResourcesIcon,
+} from "@/public/SVGs";
 import Link from "next/link";
-import { SideBarIcons } from "../../../public/assets/icons/index";
 
 export const MobileSideBar = () => {
 	return (
@@ -7,7 +12,7 @@ export const MobileSideBar = () => {
 			<div className="w-[90%] flex   justify-between  items-center ">
 				<Link href={"/mentee-profile?path=home"}>
 					<div className="flex flex-col  justify-center  items-center">
-						<span>{SideBarIcons.activeHomeIcon()}</span>
+						<HomeIcon />
 						<span className="text-[14px] text-[#121212]  font-[500] font-Hanken">
 							Home
 						</span>
@@ -15,7 +20,7 @@ export const MobileSideBar = () => {
 				</Link>
 				<Link href={"/mentee-sessions?path=sessions"}>
 					<div className="flex flex-col  justify-center  items-center ">
-						<span>{SideBarIcons.mobileSession()}</span>
+						<MobileSession />
 						<span className="text-[12px] text-[#ABABAB]  font-[400] font-Hanken">
 							Sessions
 						</span>
@@ -23,7 +28,7 @@ export const MobileSideBar = () => {
 				</Link>
 				<Link href={"/mentee-communities?path=communities"}>
 					<div className="flex flex-col  justify-center  items-center">
-						<span>{SideBarIcons.communities2()}</span>
+						<CommunitiesIcon />
 						<span className="text-[12px] text-[#ABABAB]  font-[400] font-Hanken">
 							Communities
 						</span>
@@ -31,7 +36,7 @@ export const MobileSideBar = () => {
 				</Link>
 				<Link href={"/mentee-resources?path=resources"}>
 					<div className="flex flex-col  justify-center  items-center">
-						<span>{SideBarIcons.resources2()}</span>
+						<ResourcesIcon />
 						<span className="text-[12px] text-[#ABABAB]  font-[400] font-Hanken">
 							Resource center
 						</span>
