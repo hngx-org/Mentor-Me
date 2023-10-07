@@ -46,7 +46,7 @@ text-NeutalBase font-Inter overflow-hidden "
             onClick={handleNextClick}
           />
         </div> */}
-        <div className="seeMore underline text-Accent1 lg:font-medium lg:text-[21px] lg:leading-[25.2px] ">
+        <div className="seeMore  text-Accent1 lg:font-medium lg:text-[16px] lg:leading-[25.2px] mr-4 ">
           View more
         </div>
       </div>

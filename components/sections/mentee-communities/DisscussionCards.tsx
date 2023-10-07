@@ -2,8 +2,7 @@
 import Button from "@/components/ui/Button"
 import Image from "next/image"
 import React from "react"
-import membersCardAvatar from "../../../public/assets/images/mentee-communities/membersCardAvatar.svg"
-
+import { membersCardAvatar } from "@/public"
 type Props = {
   title: string
   members: number | string
