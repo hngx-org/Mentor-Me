@@ -1,9 +1,9 @@
-import HeaderAfterSignUp from "@/components/sections/HeaderAfterSignUp";
-import HeaderBeforeSignUp from "@/components/sections/HeaderBeforeSignUp";
 import Button from "@/components/ui/Button";
 import Shoppimg from "./../../public/assets/Icons/shopping-cart.png";
 import Image from "next/image";
+import Footer from "@/components/sections/Footer";
 import SidebarMentor from "@/components/sections/SideBars/SidebarMentor";
+import { MobileSideBar } from "@/components/sections/SideBars/MobileSiderBar";
 import SidebarMentee from "@/components/sections/SideBars/SidebarMentee";
 
 export default function Landing() {
@@ -12,29 +12,22 @@ export default function Landing() {
 			<div className="flex gap-6 px-4 py-4">
 				<Button
 					className="p-3"
-					paddingLess={false}
-					iconPresent={false}
 					variant="primary"
 					type="button"
-				>
-					<div>Button</div>
-				</Button>
+					title="Primary Button"
+				/>
 
 				<Button
 					className="p-3"
-					paddingLess={false}
-					iconPresent={false}
+					title="Secondary Button"
 					variant="secondary"
 					type="button"
-				>
-					<div className="flex   justify-center gap-2">
-						<Image src={Shoppimg} alt="" width={20} height={20} />
-						Button
-					</div>
-				</Button>
+				/>
 			</div>
 
 			<SidebarMentee />
+			<MobileSideBar />
+			<Footer />
 
 			{/* <SidebarMentor /> */}
 		</>

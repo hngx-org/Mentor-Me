@@ -1,4 +1,4 @@
-type MessageBubbleProps = {
+export type MessageBubbleProps = {
   text: string;
   message: "sent" | "recieved";
   timeStamp?: string;
