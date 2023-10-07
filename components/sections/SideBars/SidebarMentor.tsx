@@ -1,6 +1,9 @@
+//@ts-nocheck
 "use client";
+import { sidebarMentorLinks } from "@/constants/constants";
+import { LogoIcon, LogoutIcon, ProfileIcon, SettingIcon } from "@/public/SVGs";
 
-import { SideBarIcons } from "@/public/assets/icons";
+import Link from "next/link";
 
 export type SideBarMentorProps = {
   light?: boolean;
@@ -180,7 +183,7 @@ export default function SidebarMentor({ light = false }: SideBarMentorProps) {
           <ul className="  cursor-pointer   ">
             <li className={`flex gap-3 items-center  p-2`}>
               <span>{SideBarIcons.profileIcon()}</span>
-              <span className="font-Inter text-[14px] font-[500]   text-Neutra30">
+              <span className="  font-Inter text-[14px] font-[500]   text-Neutra30">
                 <span className={`${light ? "text-[#000]" : " text-Neutra30"}`}>
                   {" "}
                   Funmi Oladapo
