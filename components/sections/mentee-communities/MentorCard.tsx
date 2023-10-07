@@ -60,11 +60,11 @@ const MentorCard = () => {
 
         <Button
           variant="secondary"
-          className="text-[10px] w-full"
+          className="text-[10px] w-full lg:px-10  px-6 py-5 "
           iconPresent={false}
           type="button"
         >
-          Join Discussion
+          Join Classroom
         </Button>
       </div>
     </div>

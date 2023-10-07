@@ -40,7 +40,7 @@ const DiscussionCards: React.FC<Props> = ({ title, members, desc }) => {
 
       <Button
         variant="secondary"
-        className="text-[10px]"
+        className="text-[10px]  lg:px-10 lg:py-5  px-6 py-5 "
         iconPresent={false}
         type="button"
       >
