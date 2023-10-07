@@ -22,7 +22,11 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
 			)}
 
 			<main className="lg:ml-[274px]">
-				{isMentee ? <NavbarMentee path={searchParams} /> : <NavbarMentor />}
+				{isMentee ? (
+					<NavbarMentee path={searchParams} />
+				) : (
+					<NavbarMentor path={searchParams} />
+				)}
 
 				<MobileSideBar />
 				{children}
