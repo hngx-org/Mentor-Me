@@ -8,6 +8,7 @@ import NotesTextarea from "./Notes"
 import Button from "../ui/Button"
 import Image from "next/image"
 import { clock } from "@/public"
+import Calendarcomponent from "./Calender"
 
 const Right = () => {
   interface TxF {
@@ -29,7 +30,7 @@ const Right = () => {
     { label: "EST", value: "EST" },
     { label: "GST", value: "GST" },
   ]
-
+  const [value, onChange] = useState(new Date())
   const [selectedValue, setSelectedValue] = useState<string>("GMT")
   const [selectedPlan, setSelectedPlan] = useState<string>("")
   const [selectedPricing, setSelectedPricing] = useState<string>("")
@@ -55,7 +56,7 @@ const Right = () => {
     <>
       <div>
         <p className="font-Hanken font-bold text-lg">Available Sessions</p>
-
+        <Calendarcomponent value={value} />
       </div>
       <div>
         <p className="font-Hanken font-bold text-lg">Available time slots</p>

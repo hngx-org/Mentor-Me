@@ -182,9 +182,9 @@ export default function MenteeBooking() {
                   <h2 className="font-Inter font-medium text-base">
                     {achieve.title}
                   </h2>
-                  <p className="font-Inter font-medium text-base text-Neutra40 flex gap-1">
+                  <a className="font-Inter font-medium text-base text-Neutra40 flex gap-1 hover:cursor-pointer">
                     {achieve.link} <span><Image src={link} alt=""/></span>
-                  </p>
+                  </a>
                 </div>
               </div>
               <p className="font-Hanken text-sm font-normal italic">
