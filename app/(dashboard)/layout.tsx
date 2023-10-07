@@ -9,30 +9,30 @@ import { NavbarMentor } from "@/components/sections/nav-bars/NavbarMentor";
 import { usePathname, useSearchParams } from "next/navigation";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
-	const pathname = usePathname();
-	const searchParams = useSearchParams().get("path");
-	const isMentee = pathname.includes("/mentee");
+  const pathname = usePathname();
+  const searchParams = useSearchParams().get("path");
+  const isMentee = pathname.includes("/mentee");
 
-	return (
-		<>
-			{isMentee ? (
-				<SidebarMentee path={searchParams} />
-			) : (
-				<SidebarMentor path={searchParams} />
-			)}
+  return (
+    <>
+      {isMentee ? (
+        <SidebarMentee path={searchParams} />
+      ) : (
+        <SidebarMentor path={searchParams} />
+      )}
 
-			<main className="lg:ml-[274px]">
-				{isMentee ? (
-					<NavbarMentee path={searchParams} />
-				) : (
-					<NavbarMentor path={searchParams} />
-				)}
+      <main className="lg:ml-[274px]">
+        {isMentee ? (
+          <NavbarMentee path={searchParams} />
+        ) : (
+          <NavbarMentor path={searchParams} />
+        )}
 
-				<MobileSideBar />
-				{children}
-			</main>
-		</>
-	);
+        <MobileSideBar />
+        {children}
+      </main>
+    </>
+  );
 };
 
 export default DashboardLayout;
