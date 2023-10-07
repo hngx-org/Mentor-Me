@@ -25,11 +25,11 @@ export default function SidebarMentee({
 
 				<div>
 					<div className="w-full pl-3">{light ? <Logo2 /> : <LogoIcon />}</div>
-					<div className="mt-20 2xl:mt-28 tall:mt-10">
+					<div className="mt-20 2xl:mt-28 ">
 						<p className="  font-Inter tetx-[14px]  leading-[20.3px] font-[500]   text-Neutra30 pl-3">
 							MENU
 						</p>
-						<ul className=" px-3  py-4 flex flex-col gap-4 cursor-pointer text-sm  tall:py-2 tall:gap-1">
+						<ul className=" px-3  py-4 flex flex-col gap-4 cursor-pointer text-sm  ">
 							{sidebarMenteeLinks.map((link) => (
 								<Link key={link.id} href={link.path} prefetch>
 									<li

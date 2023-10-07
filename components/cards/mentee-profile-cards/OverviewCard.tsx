@@ -14,14 +14,14 @@ export default function OverviewCard({
 	experience,
 	workPlace,
 }: Props) {
-	const [showMore, setshowMore] = useState(false);
+	const [showMore, setshowMore] = useState(true);
 	return (
 		<div className="mt-6 flex flex-col gap-8">
-			<div>
+			<div className="w-full">
 				<h2 className="text-Neutral50 font-bold font-Hanken text-[18px]">
 					Bio:
 				</h2>
-				<p className="text-Neutral50 font-Hanken text-[16px]">
+				<p className="text-Neutral50 font-Hanken text-[16px] w-full max-w-[500px]">
 					{desc.length >= 200 && showMore ? desc.slice(0, 200) + "...." : desc}
 				</p>
 				{desc.length >= 200 && (
