@@ -1,5 +1,7 @@
-import * as React from "react"
-import { SVGProps } from "react"
+
+import * as React from "react";
+import { SVGProps } from "react";
+
 export const EditIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -174,6 +176,7 @@ export const MessageIcon = (props: SVGProps<SVGSVGElement>) => (
 )
 
 export const BookingIcon = (props: SVGProps<SVGSVGElement>) => (
+
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={20}
@@ -229,3 +232,43 @@ export const ArrowRigthIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
+=======
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={20}
+		height={20}
+		fill="none"
+		{...props}
+	>
+		<path
+			stroke="#fff"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			strokeWidth={1.5}
+			d="M7.5 18.334h5c4.166 0 5.833-1.667 5.833-5.834v-5c0-4.166-1.667-5.833-5.834-5.833h-5c-4.166 0-5.833 1.667-5.833 5.833v5c0 4.167 1.667 5.834 5.833 5.834ZM13.125 7.5h-6.25M13.125 12.5h-6.25"
+		/>
+	</svg>
+);
+
+export const CaretIcon = (props: SVGProps<SVGSVGElement>) => {
+	return (
+		<svg
+			width="20"
+			height="20"
+			viewBox="0 0 20 20"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			{...props}
+		>
+			<path
+				d="M16.5984 7.45898L11.1651 12.8923C10.5234 13.534 9.47344 13.534 8.83177 12.8923L3.39844 7.45898"
+				stroke="#292D32"
+				strokeWidth="1.5"
+				strokeMiterlimit="10"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+			/>
+		</svg>
+	);
+};
+
