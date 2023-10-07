@@ -1,6 +1,7 @@
 "use client";
 
 import OverviewCard from "@/components/cards/mentee-profile-cards/OverviewCard";
+import { MobileSideBar } from "@/components/sections/SideBars/MobileSiderBar";
 import Button from "@/components/ui/Button";
 import { DashboardCoverBg, MenteeDashboardProfileImg } from "@/public";
 import { NaijaFlagIcon } from "@/public/SVGs";
@@ -105,6 +106,7 @@ export default function MenteeProfilePage() {
 					</div>
 				</div>
 			</div>
+			<MobileSideBar />
 		</section>
 	);
 }
