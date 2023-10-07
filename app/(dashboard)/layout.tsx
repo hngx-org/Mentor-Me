@@ -4,7 +4,8 @@ import { MobileSideBar } from "@/components/sections/SideBars/MobileSiderBar";
 import SidebarMentee from "@/components/sections/SideBars/SidebarMentee";
 import SidebarMentor from "@/components/sections/SideBars/SidebarMentor";
 import { NavbarMentee } from "@/components/sections/nav-bars/NavbarMentee";
-import NavbarMentor from "@/components/sections/nav-bars/NavbarMentor";
+import { NavbarMentor } from "@/components/sections/nav-bars/NavbarMentor";
+
 import { usePathname, useSearchParams } from "next/navigation";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
