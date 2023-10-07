@@ -22,7 +22,7 @@ import {
 
 export default function MentorProfileVerification() {
   const [step, setStep] = useState(0);
-  const [verificationStatus, setVerificationStatus] = useState("rejected");
+  const [verificationStatus, setVerificationStatus] = useState("");
   const [showModal, setShowModal] = useState(false);
 
   const handleNextStep = () => {
