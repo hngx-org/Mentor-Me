@@ -56,6 +56,6 @@ export default function MenteeCommunities() {
 
       <div className="footer h-40 w-full bg-transparent"></div>
     </div>
-
+    // <BigMentorShipCard />
   )
 }

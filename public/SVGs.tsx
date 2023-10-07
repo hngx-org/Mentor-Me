@@ -1,4 +1,3 @@
-
 import * as React from "react"
 import { SVGProps } from "react"
 export const EditIcon = (props: SVGProps<SVGSVGElement>) => (
@@ -16,9 +15,7 @@ export const EditIcon = (props: SVGProps<SVGSVGElement>) => (
       d="m15 6 3 3m-5 11h8M5 16l-1 4 4-1L19.586 7.414a2 2 0 0 0 0-2.828l-.172-.172a2 2 0 0 0-2.828 0L5 16Z"
     />
   </svg>
-
-);
-
+)
 
 export const AwardIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -38,8 +35,7 @@ export const AwardIcon = (props: SVGProps<SVGSVGElement>) => (
       <path d="M17.5 7.63V5c0-2-1-3-3-3h-5c-2 0-3 1-3 3v2.56M12.632 10.99l.57.89c.09.14.29.28.44.32l1.02.26c.63.16.8.7.39 1.2l-.67.81c-.1.13-.18.36-.17.52l.06 1.05c.04.65-.42.98-1.02.74l-.98-.39a.863.863 0 0 0-.55 0l-.98.39c-.6.24-1.06-.1-1.02-.74l.06-1.05c.01-.16-.07-.4-.17-.52l-.67-.81c-.41-.5-.24-1.04.39-1.2l1.02-.26c.16-.04.36-.19.44-.32l.57-.89c.36-.54.92-.54 1.27 0Z" />
     </g>
   </svg>
-);
-
+)
 
 export const NaijaFlagIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -62,9 +58,7 @@ export const NaijaFlagIcon = (props: SVGProps<SVGSVGElement>) => (
       </clipPath>
     </defs>
   </svg>
-
-);
-
+)
 
 export const NotificationIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -88,9 +82,7 @@ export const NotificationIcon = (props: SVGProps<SVGSVGElement>) => (
       d="M15.33 18.82c0 1.83-1.5 3.33-3.33 3.33-.91 0-1.75-.38-2.35-.98-.6-.6-.98-1.44-.98-2.35"
     />
   </svg>
-
-);
-
+)
 
 export const NotificationBingIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -109,9 +101,7 @@ export const NotificationBingIcon = (props: SVGProps<SVGSVGElement>) => (
     </g>
     <path fill="#D53232" d="M18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
   </svg>
-
-);
-
+)
 
 export const CartOutlineIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -130,9 +120,7 @@ export const CartOutlineIcon = (props: SVGProps<SVGSVGElement>) => (
       d="M21 8.75H9c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h12c.41 0 .75.34.75.75s-.34.75-.75.75Z"
     />
   </svg>
-
-);
-
+)
 
 export const HomeIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -157,10 +145,7 @@ export const HomeIcon = (props: SVGProps<SVGSVGElement>) => (
       d="M10 12.917a2.083 2.083 0 1 0 0-4.167 2.083 2.083 0 0 0 0 4.167Z"
     />
   </svg>
-
-
-);
-
+)
 
 export const MessageIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -186,8 +171,7 @@ export const MessageIcon = (props: SVGProps<SVGSVGElement>) => (
       d="M13.33 9.167h.008M9.996 9.167h.008M6.662 9.167h.008"
     />
   </svg>
-
-);
+)
 
 export const BookingIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -205,8 +189,7 @@ export const BookingIcon = (props: SVGProps<SVGSVGElement>) => (
       d="M7.5 18.334h5c4.166 0 5.833-1.667 5.833-5.834v-5c0-4.166-1.667-5.833-5.834-5.833h-5c-4.166 0-5.833 1.667-5.833 5.833v5c0 4.167 1.667 5.834 5.833 5.834ZM13.125 7.5h-6.25M13.125 12.5h-6.25"
     />
   </svg>
-
-);
+)
 
 export const ArrowLeftIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -245,9 +228,7 @@ export const ArrowRigthIcon = (props: SVGProps<SVGSVGElement>) => (
       d="m20.441 8.4 8.6 8.6-8.6 8.6M4.959 17h23.843"
     />
   </svg>
-
-);
-
+)
 
 export const CaretIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
@@ -268,8 +249,7 @@ export const CaretIcon = (props: SVGProps<SVGSVGElement>) => {
         strokeLinejoin="round"
       />
     </svg>
-
-  );
+  )
 }
 
 export const VerifiedIcon = (props: SVGProps<SVGSVGElement>) => (
@@ -352,7 +332,4 @@ export const ClockIcon = (props: SVGProps<SVGSVGElement>) => (
       d="m8.802 8.102-1.55-.925c-.27-.16-.49-.545-.49-.86v-2.05"
     />
   </svg>
-
-  );
-};
-
+)
