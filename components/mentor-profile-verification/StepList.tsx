@@ -2,7 +2,11 @@ import React from "react";
 import { StepListProps } from "./types";
 import { SmallBulletIcon } from "@/public/SVGs";
 
-export default function StepList({ step, setStep }: StepListProps) {
+export default function StepList({
+  step,
+  setStep,
+  formSubmitted,
+}: StepListProps) {
   return (
     <>
       <ul>
@@ -11,7 +15,10 @@ export default function StepList({ step, setStep }: StepListProps) {
             step === 1 ? "border border-Accent1 rounded-md" : ""
           }`}
           onClick={() => {
-            setStep(1);
+            if (!formSubmitted) {
+              // Check if the form has not been submitted
+              setStep(1);
+            }
           }}
         >
           <div className="flex items-center">
@@ -33,7 +40,7 @@ export default function StepList({ step, setStep }: StepListProps) {
                 <span>
                   <SmallBulletIcon />
                 </span>
-                <p className="font-[400] font-Hanken text-[12px] text-Neutra40">
+                <p className="w-50 font-[400] font-Hanken text-[12px] text-Neutra40">
                   We require this information to verify your qualifications as a
                   mentor, ensuring expertise in your chosen field and building
                   trust among mentees.
@@ -59,7 +66,10 @@ export default function StepList({ step, setStep }: StepListProps) {
             step === 2 ? "border border-Accent1 rounded-md" : ""
           }`}
           onClick={() => {
-            setStep(2);
+            if (!formSubmitted) {
+              // Check if the form has not been submitted
+              setStep(2);
+            }
           }}
         >
           <div className="flex items-center">
@@ -95,7 +105,10 @@ export default function StepList({ step, setStep }: StepListProps) {
             step === 3 ? "border border-Accent1 rounded-md" : ""
           }`}
           onClick={() => {
-            setStep(3);
+            if (!formSubmitted) {
+              // Check if the form has not been submitted
+              setStep(3);
+            }
           }}
         >
           <div className="flex items-center">
@@ -134,7 +147,10 @@ export default function StepList({ step, setStep }: StepListProps) {
             step === 4 ? "border border-Accent1 rounded-md" : ""
           }`}
           onClick={() => {
-            setStep(4);
+            if (!formSubmitted) {
+              // Check if the form has not been submitted
+              setStep(4);
+            }
           }}
         >
           <div className="flex items-center">

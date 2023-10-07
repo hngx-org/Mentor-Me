@@ -10,11 +10,11 @@ interface Steps {
 export default function HeaderAfterSignUp({ step }: Steps) {
   const isStep1To4 = step >= 1 && step <= 4;
   const h1ClassName = isStep1To4
-    ? "font-Hanken font-[700] text-2xl text-Neutra20"
-    : "font-Hanken font-[700] text-2xl text-NeutalBase";
+    ? "font-Hanken font-[700]  md:text-2xl text-xl text-Neutra20"
+    : "font-Hanken font-[700] md:text-2xl text-xl text-NeutalBase";
 
   return (
-    <nav className="flex justify-between items-center py-5 px-9 bg-[#FFFF] cursor-pointer border-b">
+    <nav className="flex justify-between items-center py-5 md:px-4 px-2 bg-[#FFFF] cursor-pointer border-b">
       <div className="flex items-center">
         <h1 className={h1ClassName}>Mentor Account </h1>
 
@@ -63,7 +63,7 @@ export default function HeaderAfterSignUp({ step }: Steps) {
       </div>
 
       <div className="flex items-center gap-5">
-        <span>{SideBarIcons.notify()}</span>
+        <span className="md:visible invisible">{SideBarIcons.notify()}</span>
 
         <div className="flex items-center gap-2">
           <span>{SideBarIcons.profileIcon()}</span>

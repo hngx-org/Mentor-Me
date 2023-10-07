@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { SideBarIcons } from "@/public/assets/Icons";
+import { SideBarIcons } from "@/public/assets/icons";
 
 export const MobileSideBar = () => {
   return (

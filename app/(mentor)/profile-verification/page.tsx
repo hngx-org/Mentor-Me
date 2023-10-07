@@ -19,11 +19,13 @@ import {
   RejectedStatusIcon,
   CancelIcon,
 } from "@/public/SVGs";
+import SideBar from "@/components/mentor-profile-verification/SideBarMentor";
 
 export default function MentorProfileVerification() {
   const [step, setStep] = useState(0);
   const [verificationStatus, setVerificationStatus] = useState("");
   const [showModal, setShowModal] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleNextStep = () => {
     setStep(step + 1);
@@ -37,35 +39,40 @@ export default function MentorProfileVerification() {
     setShowModal(true);
     setVerificationStatus("pending");
     setStep(0);
+    setFormSubmitted(true);
     console.log(showModal);
   };
   return (
     <>
       <div className="w-full flex">
-        <SidebarMentor />
+        <SideBar />
         <div className="w-full">
           <HeaderAfterSignUp step={step} />
 
           <div className="content my-5 flex flex-col items-center">
-            <h1 className="font-Hanken font-[600] text-3xl">
+            <h1 className="font-Hanken font-[600] md:text-3xl text-2xl">
               Welcome to Mentor Me
             </h1>
-            <p className="font-Hanken font-[400] text-base">
+            <p className="font-Hanken font-[400] md:text-base text-sm px-3 md:px-0">
               First things first, complete your verification. This will allow us
               to know more about you
             </p>
 
-            <div className="container mt-5 grid grid-cols-4">
-              <div className="left-panel col-span-1 ml-4">
-                <StepList step={step} setStep={setStep} />
+            <div className="container mt-5 lg:grid grid-cols-6">
+              <div className="left-panel col-span-2 lg:ml-10 md:mx-5">
+                <StepList
+                  step={step}
+                  setStep={setStep}
+                  formSubmitted={formSubmitted}
+                />
               </div>
-              <div className="right-panel col-span-3">
+              <div className="right-panel col-span-4">
                 {step === 0 && (
                   <>
                     {verificationStatus === "" && (
                       <div className="flex flex-col justify-center items-center py-20">
                         <Image src={amico} alt="amico" />
-                        <div className="px-16 mt-8">
+                        <div className="md:px-8 px-3 mt-8">
                           <h5 className="font-Hanken text-[24px] font-[700]">
                             Verify your profile in a few steps and let’s get
                             started!
@@ -88,7 +95,7 @@ export default function MentorProfileVerification() {
                     )}
 
                     {verificationStatus === "pending" && (
-                      <div className="flex flex-col justify-center items-center ml-5">
+                      <div className="flex flex-col justify-center items-center md:ml-5 ml-0">
                         <div className="w-full bg-[#fffbde] py-3 px-4 border-t-4 border-[#e5b800]">
                           <div className="flex justify-between">
                             <p className="flex font-Inter font-[600] text-[16px] text-[#e5b800]">
@@ -108,11 +115,11 @@ export default function MentorProfileVerification() {
                           alt="amico"
                           className="mt-10"
                         />
-                        <div className="px-16 mt-8">
+                        <div className="md:px-8 px-3 mt-8">
                           <h5 className="font-Hanken text-[24px] font-[700]">
                             Your application has been submitted!
                           </h5>
-                          <p className="text-center font-Hanken text-[16px] font-[400] text-Neutra40">
+                          <p className="font-Hanken text-[16px] font-[400] text-Neutra40">
                             Your profile will be verified between 24 - 48 hours.
                           </p>
                         </div>
@@ -140,11 +147,11 @@ export default function MentorProfileVerification() {
                           alt="amico"
                           className="mt-10"
                         />
-                        <div className="px-16 mt-8">
+                        <div className="md:px-8 px-3 mt-8">
                           <h5 className=" font-Hanken text-[24px] font-[700]">
                             Your application has been approved!
                           </h5>
-                          <p className="text-center font-Hanken text-[16px] font-[400] text-Neutra40">
+                          <p className="font-Hanken text-[16px] font-[400] text-Neutra40">
                             Head to approved dashboard
                           </p>
 
@@ -176,11 +183,11 @@ export default function MentorProfileVerification() {
                           alt="amico"
                           className="mt-10"
                         />
-                        <div className="px-16 mt-8">
+                        <div className="md:px-8 px-3 mt-8">
                           <h5 className=" font-Hanken text-[24px] font-[700]">
                             Your application has been rejected
                           </h5>
-                          <p className="text-center font-Hanken text-[16px] font-[400] text-Neutra40">
+                          <p className="font-Hanken text-[16px] font-[400] text-Neutra40">
                             Check your email to see the reason your application
                             was rejected
                           </p>
