@@ -61,11 +61,17 @@ const BigMentorShipCard = () => {
         <Button
           variant="primary"
           className="text-[10px] px-10 py-5 "
+<<<<<<< Updated upstream
           iconPresent={false}
           type="button"
         >
           Join Classroom
         </Button>
+=======
+          type="button"
+          title="Join Classroom"
+        />
+>>>>>>> Stashed changes
       </div>
     </div>
   )
