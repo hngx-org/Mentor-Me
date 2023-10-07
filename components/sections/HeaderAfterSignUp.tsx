@@ -2,8 +2,7 @@ import Image from "next/image";
 import { DashboardMenteeNavImg } from "@/public";
 import React from "react";
 
-import { BulletIcon, NotifyIcon, ProfileIcon } from "@/public/SVGs";
-import { SideBarIcons } from "@/public/assets/Icons";
+import { BulletIcon, NotifyIcon } from "@/public/SVGs";
 
 interface Steps {
   step: number;
@@ -65,7 +64,7 @@ export default function HeaderAfterSignUp({ step }: Steps) {
       </div>
 
       <div className="flex items-center gap-5">
-        <span className="md:visible invisible">{SideBarIcons.notify()}</span>
+        <span className="md:visible invisible">{<NotifyIcon />}</span>
 
         <div className="flex items-center gap-2">
           <Image
