@@ -80,7 +80,7 @@ export default function MentorFormBuilder(props: {
       {/* container for the buttons */}
       <div className="flex gap-3 mt-[50px] justify-between">
         <div
-          className="cursor-pointer border-[#121212] font-semibold border-[1px] p-20 py-5 rounded-md font-Inter text-center"
+          className="cursor-pointer border-[#121212] font-semibold border-[1px] w-[100%] max-w-[200px] py-5 rounded-md font-Inter text-center"
           onClick={() => {
             props.handleBack();
           }}
@@ -88,7 +88,7 @@ export default function MentorFormBuilder(props: {
           Back
         </div>
         <button
-          className=" bg-[#121212] text-white font-semibold border-[1px] p-20 py-5 rounded-md font-Inter text-center"
+          className=" bg-[#121212] text-white font-semibold border-[1px] w-[100%] max-w-[200px] py-5 rounded-md font-Inter text-center"
           onClick={(e) => {
             e.preventDefault();
             const valid = (form.current! as HTMLFormElement).reportValidity();
