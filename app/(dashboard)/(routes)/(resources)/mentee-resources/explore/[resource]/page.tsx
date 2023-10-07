@@ -1,10 +1,12 @@
-import Star from "@/public/assets/filled_star.svg";
-import Star2 from "@/public/assets/empty_star.svg";
-import Notify from "@/public/assets/ex.svg";
-import Arrow from "@/public/assets/arrow_down.svg";
-import Profile from "@/public/assets/dylan.png";
 import Image from "next/image";
 import { courseContents, courseTitles } from "../constants";
+import Profile from "@/public/assets/dylan.png";
+import {
+  DownArrowIcon,
+  EmptyStarIcon,
+  FilledStarIcon,
+  NotifyIcon,
+} from "@/public/SVGs";
 
 const Resource = () => {
   return (
@@ -17,12 +19,12 @@ const Resource = () => {
           The secrets to creating great user experiences for your products, and
           helping your organization satisfy users.
         </p>
-        <div className="flex font-Hanken text-xs text-white">
-          <Image src={Star} alt="rate" />
-          <Image src={Star} alt="rate" />
-          <Image src={Star} alt="rate" />
-          <Image src={Star} alt="rate" />
-          <Image src={Star2} alt="rate" />
+        <div className="flex font-Hanken text-xs text-white items-center">
+          <FilledStarIcon />
+          <FilledStarIcon />
+          <FilledStarIcon />
+          <FilledStarIcon />
+          <EmptyStarIcon />
           <span className="mx-1">4.5 | </span>
           <span>20 reviews</span>
         </div>
@@ -30,7 +32,7 @@ const Resource = () => {
           Created by <span className="text-Accent2">Dylan Matthias</span>{" "}
         </p>
         <div className="flex gap-2">
-          <Image src={Notify} alt="note" />
+          <NotifyIcon />
           <p className="font-Hanken text-xs text-white ">
             {" "}
             Last updated on 9/2023
@@ -47,18 +49,15 @@ const Resource = () => {
           </div>
           <div className="py-[22px] px-[18px] rounded-lg shadow-md border border-Neutra10">
             {courseTitles.map((course) => (
-              <p
-                key={course.id}
-                className="flex gap-2 items-center font-Hanken text-[#333] mb-6"
-              >
-                <span>{<Image src={course.img} alt="play" />}</span>{" "}
-                {course.title}
-              </p>
+              <div key={course.id} className="flex gap-2 items-center  mb-6">
+                <course.icon />
+                <span className="text-[#333] font-Hanken">{course.title}</span>
+              </div>
             ))}
             <button className="text-Accent1 font-Inter font-medium text-sm flex gap-2 items-center">
               Show All Lessons{" "}
               <span>
-                <Image src={Arrow} alt="arrow" />
+                <DownArrowIcon className="cursor-pointer" />
               </span>
             </button>
           </div>
@@ -112,9 +111,12 @@ const Resource = () => {
             <h1 className="font-Inter text-lg font-medium">
               This course includes:
             </h1>
-            <ul className="ml-6 list-disc">
+            <ul className="ml-6">
               {courseContents.map((content) => (
-                <li className="font-Hanken text-Neutra50" key={content.id}>
+                <li
+                  className="font-Hanken text-Neutra50 list-disc"
+                  key={content.id}
+                >
                   {content.title}
                 </li>
               ))}

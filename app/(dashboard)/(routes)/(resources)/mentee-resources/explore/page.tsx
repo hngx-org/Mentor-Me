@@ -3,9 +3,8 @@ import React, { useRef } from "react";
 import { newResources, resourceLinks } from "./constants";
 import Link from "next/link";
 import ResourceCard from "@/app/(dashboard)/(routes)/(resources)/mentee-resources/explore/ResourceCard";
-import LeftArrow from "@/public/assets/left_arr.svg";
-import RightArrow from "@/public/assets/right_arr.svg";
-import Image from "next/image";
+
+import { BackwardIcon, ForwardIcon } from "@/public/SVGs";
 
 const Explore = () => {
   const resourceContainerRef = useRef<HTMLDivElement | null>(null);
@@ -54,28 +53,18 @@ const Explore = () => {
         <div className="w-full flex justify-between items-center mb-6">
           <h1 className="font-Inter text-2xl text-[#1C0028]">New Resources</h1>
           <div className="hidden md:flex gap-4">
-            <Image
-              src={LeftArrow}
-              alt="left"
-              width={21}
-              height={24}
-              className="cursor-pointer"
-              onClick={scrollLeft}
-            />
-            <Image
-              src={RightArrow}
-              alt="left"
-              width={21}
-              height={24}
-              className="cursor-pointer"
-              onClick={scrollRight}
-            />
+            <button title="btn" type="button" onClick={scrollLeft}>
+              <BackwardIcon />
+            </button>
+            <button title="btn" type="button" onClick={scrollRight}>
+              <ForwardIcon />
+            </button>
           </div>
         </div>
         <div
           ref={resourceContainerRef}
-          className="flex flex-col md:flex-row gap-6 w-full 
-          overflow-hidden  scroll-smooth"
+          className="flex flex-col sm:flex-row gap-6 w-full 
+          overflow-hidden scroll-smooth"
         >
           {newResources.map((res) => (
             <ResourceCard
@@ -97,27 +86,17 @@ const Explore = () => {
             Top Rated Resources
           </h1>
           <div className="hidden md:flex gap-4">
-            <Image
-              src={LeftArrow}
-              alt="left"
-              width={21}
-              height={24}
-              className="cursor-pointer"
-              onClick={scrollLeft2}
-            />
-            <Image
-              src={RightArrow}
-              alt="left"
-              width={21}
-              height={24}
-              className="cursor-pointer"
-              onClick={scrollRight2}
-            />
+            <button title="btn" type="button" onClick={scrollLeft2}>
+              <BackwardIcon />
+            </button>
+            <button title="btn" type="button" onClick={scrollRight2}>
+              <ForwardIcon />
+            </button>
           </div>
         </div>
         <div
           ref={resourceContainerRef2}
-          className="flex flex-col md:flex-row gap-6 w-full 
+          className="flex flex-col sm:flex-row gap-6 w-full 
           overflow-hidden scroll-smooth"
         >
           {newResources.map((res) => (

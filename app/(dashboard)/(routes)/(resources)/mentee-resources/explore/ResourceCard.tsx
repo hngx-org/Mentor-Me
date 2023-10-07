@@ -1,7 +1,6 @@
 import Image, { StaticImageData } from "next/image";
-import Star from "@/public/assets/filled_star.svg";
-import Star2 from "@/public/assets/empty_star.svg";
 import Link from "next/link";
+import { EmptyStarIcon, FilledStarIcon } from "@/public/SVGs";
 
 interface Card {
   id: number;
@@ -12,6 +11,7 @@ interface Card {
   rate: number;
   reviews: number;
 }
+
 const ResourceCard = ({
   id,
   src,
@@ -41,11 +41,11 @@ const ResourceCard = ({
           N{price}
         </h1>
         <div className="flex font-Hanken text-xs text-NeutalBase">
-          <Image src={Star} alt="rate" />
-          <Image src={Star} alt="rate" />
-          <Image src={Star} alt="rate" />
-          <Image src={Star} alt="rate" />
-          <Image src={Star2} alt="rate" />
+          <FilledStarIcon />
+          <FilledStarIcon />
+          <FilledStarIcon />
+          <FilledStarIcon />
+          <EmptyStarIcon />
           <span className="mx-1">{rate} | </span>
           <span> {reviews} reviews</span>
         </div>

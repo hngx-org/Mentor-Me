@@ -1,13 +1,11 @@
-import Image from "next/image";
 import React from "react";
-
-import Book from "@/public/assets/resources_book.svg";
 import Link from "next/link";
+import { BookIcon } from "@/public/SVGs";
 
 const Resources = () => {
   return (
     <div className="w-full max-w-[447px] h-screen flex flex-col justify-center items-center mx-auto ">
-      <Image src={Book} alt="book" width={195} height={196} />
+      <BookIcon />
       <p className="mt-6 mb-7 font-Hanken text-Neutra40 text-lg">
         You have no resources yet
       </p>

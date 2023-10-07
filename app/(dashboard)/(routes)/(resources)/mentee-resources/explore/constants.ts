@@ -1,7 +1,6 @@
-import ResourceOne from "@/public/assets/resourcesOne.png";
+import ResourceOne from "@/public/assets/resource_one.png";
 import ResourceTwo from "@/public/assets/resource_two.png";
-import Play from "@/public/assets/play_sm.svg";
-import Lock from "@/public/assets/lock.svg";
+import { LockIcon, PlayIcon } from "@/public/SVGs";
 
 export const resourceLinks = [
   { label: "All", id: 1, to: "" },
@@ -45,10 +44,10 @@ export const newResources = [
 ];
 
 export const courseTitles = [
-  { id: 1, title: "Introduction", img: Play },
-  { id: 2, title: "What is UI Design", img: Lock },
-  { id: 3, title: "What is UI Design", img: Lock },
-  { id: 4, title: "What is UI Design", img: Lock },
+  { id: 1, title: "Introduction", icon: PlayIcon },
+  { id: 2, title: "What is UI Design", icon: LockIcon },
+  { id: 3, title: "What is UI Design", icon: LockIcon },
+  { id: 4, title: "What is UI Design", icon: LockIcon },
 ];
 
 export const courseContents = [
