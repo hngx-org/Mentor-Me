@@ -1,6 +1,6 @@
 import * as React from "react";
 import { SVGProps } from "react";
-export const EditIcon = (props: SVGProps<SVGSVGElement>) => (
+export const EditIcon = (props?: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={24}
@@ -17,7 +17,7 @@ export const EditIcon = (props: SVGProps<SVGSVGElement>) => (
 	</svg>
 );
 
-export const AwardIcon = (props: SVGProps<SVGSVGElement>) => (
+export const AwardIcon = (props?: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={24}
@@ -37,7 +37,7 @@ export const AwardIcon = (props: SVGProps<SVGSVGElement>) => (
 	</svg>
 );
 
-export const NaijaFlagIcon = (props: SVGProps<SVGSVGElement>) => (
+export const NaijaFlagIcon = (props?: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={39}
@@ -60,7 +60,7 @@ export const NaijaFlagIcon = (props: SVGProps<SVGSVGElement>) => (
 	</svg>
 );
 
-export const NotificationIcon = (props: SVGProps<SVGSVGElement>) => (
+export const NotificationIcon = (props?: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={24}
@@ -84,7 +84,7 @@ export const NotificationIcon = (props: SVGProps<SVGSVGElement>) => (
 	</svg>
 );
 
-export const NotificationBingIcon = (props: SVGProps<SVGSVGElement>) => (
+export const NotificationBingIcon = (props?: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={24}
@@ -103,7 +103,7 @@ export const NotificationBingIcon = (props: SVGProps<SVGSVGElement>) => (
 	</svg>
 );
 
-export const CartOutlineIcon = (props: SVGProps<SVGSVGElement>) => (
+export const CartOutlineIcon = (props?: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={24}
@@ -122,7 +122,7 @@ export const CartOutlineIcon = (props: SVGProps<SVGSVGElement>) => (
 	</svg>
 );
 
-export const HomeIcon = (props: SVGProps<SVGSVGElement>) => (
+export const HomeIcon = (props?: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={20}
@@ -147,7 +147,7 @@ export const HomeIcon = (props: SVGProps<SVGSVGElement>) => (
 	</svg>
 );
 
-export const MessageIcon = (props: SVGProps<SVGSVGElement>) => (
+export const MessageIcon = (props?: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={20}
@@ -173,7 +173,7 @@ export const MessageIcon = (props: SVGProps<SVGSVGElement>) => (
 	</svg>
 );
 
-export const BookingIcon = (props: SVGProps<SVGSVGElement>) => (
+export const BookingIcon = (props?: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={20}
@@ -191,7 +191,7 @@ export const BookingIcon = (props: SVGProps<SVGSVGElement>) => (
 	</svg>
 );
 
-export const ArrowLeftIcon = (props: SVGProps<SVGSVGElement>) => (
+export const ArrowLeftIcon = (props?: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={34}
@@ -210,7 +210,7 @@ export const ArrowLeftIcon = (props: SVGProps<SVGSVGElement>) => (
 	</svg>
 );
 
-export const ArrowRigthIcon = (props: SVGProps<SVGSVGElement>) => (
+export const ArrowRigthIcon = (props?: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={34}
@@ -230,7 +230,7 @@ export const ArrowRigthIcon = (props: SVGProps<SVGSVGElement>) => (
 	</svg>
 );
 
-export const CaretIcon = (props: SVGProps<SVGSVGElement>) => {
+export const CaretIcon = (props?: SVGProps<SVGSVGElement>) => {
 	return (
 		<svg
 			width="20"
@@ -252,7 +252,7 @@ export const CaretIcon = (props: SVGProps<SVGSVGElement>) => {
 	);
 };
 
-export const VerifiedIcon = (props: SVGProps<SVGSVGElement>) => (
+export const VerifiedIcon = (props?: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -282,7 +282,7 @@ export const VerifiedIcon = (props: SVGProps<SVGSVGElement>) => (
 	</svg>
 );
 
-export const CalenderIcon = (props: SVGProps<SVGSVGElement>) => (
+export const CalenderIcon = (props?: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={12}
@@ -308,7 +308,7 @@ export const CalenderIcon = (props: SVGProps<SVGSVGElement>) => (
 	</svg>
 );
 
-export const ClockIcon = (props: SVGProps<SVGSVGElement>) => (
+export const ClockIcon = (props?: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={13}
