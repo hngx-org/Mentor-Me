@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { SideBarIcons } from "@/public/assets/Icons";
+import { SideBarIcons } from "@/public/assets/icons";
 import { BulletIcon } from "@/public/SVGs";
 
 interface Steps {
