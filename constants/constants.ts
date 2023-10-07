@@ -246,7 +246,7 @@ export const sidebarMentorLinks: SidebarLinksProps[] = [
 	},
 	{
 		id: 3,
-		path: "/mentor-mentors?path=MyMentors",
+		path: "/mentor-my-mentors?path=MyMentors",
 		label: "My Mentors",
 		iconDark: SideBarIcons.myMentorsIcons(),
 		iconLight: SideBarIcons.MyMentors2(),
