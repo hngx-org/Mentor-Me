@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 
 import { SideBarIcons } from "@/public/assets/icons";
 
@@ -9,7 +9,7 @@ export type SideBarMentorProps = {
 export default function SidebarMentor({ light = false }: SideBarMentorProps) {
   return (
     <section
-      className={`w-[274px] border-[1px] p-7 h-[900px] relative ${
+      className={`w-[274px] border-[1px] ml-10 p-7 h-[900px] relative ${
         light ? "bg-[#fff]" : " bg-[#000]"
       }`}
     >

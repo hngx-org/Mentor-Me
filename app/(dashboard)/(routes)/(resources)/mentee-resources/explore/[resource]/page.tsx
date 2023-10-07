@@ -37,7 +37,7 @@ const Resource = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row p-[30px] gap-4 md:gap-9">
+      <div className="flex flex-col lg:flex-row p-3 sm:p-[30px] gap-4 md:gap-9">
         <div className="w-full lg:w-[55%]">
           <div className="w-full flex justify-between items-center mb-[19px]">
             <h1 className="text-NeutalBase font-Inter text-2xl font-medium">
@@ -94,7 +94,7 @@ const Resource = () => {
         </div>
         <div className="w-full lg:w-[45%] flex flex-col">
           <video src="" controls></video>
-          <div className="w-full p-6">
+          <div className="w-full p-3 sm:p-6">
             <div className="w-full flex justify-between items-center mb-[34px]">
               <p className="font-Hanken text-[32px] text-NeutalBase font-semibold">
                 $10

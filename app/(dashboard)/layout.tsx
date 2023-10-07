@@ -1,27 +1,29 @@
+"use client";
+
 import SidebarMentee from "@/components/sections/SideBars/SidebarMentee";
 import SidebarMentor from "@/components/sections/SideBars/SidebarMentor";
 import { NavbarMentee } from "@/components/sections/nav-bars/NavbarMentee";
 import NavbarMentor from "@/components/sections/nav-bars/NavbarMentor";
+import { usePathname, useSearchParams } from "next/navigation";
 
-import { headers } from "next/headers";
-import { DashboardNav } from "./DashbordNav";
+const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
+  const pathname = usePathname();
+  const searchParams = useSearchParams().get("path");
 
-const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
-  const headersList = headers();
-  const domain = headersList.get("host") || "";
-  const fullUrl = headersList.get("referer") || "";
-  const isMentee = fullUrl.includes("/mentee");
+  const isMentee = pathname.includes("/mentee");
 
-  console.log(fullUrl);
   console.log("===========");
   console.log(isMentee);
+  console.log(pathname);
+  console.log(searchParams);
+
   console.log("===========");
   return (
     <>
-      {isMentee ? <SidebarMentee /> : <SidebarMentor />}
+      {isMentee ? <SidebarMentee path={searchParams} /> : <SidebarMentor />}
 
-      <main className="ml-[274px]">
-        {isMentee ? <NavbarMentee /> : <NavbarMentor />}
+      <main className="lg:ml-[274px]">
+        {isMentee ? <NavbarMentee path={searchParams} /> : <NavbarMentor />}
 
         {children}
       </main>

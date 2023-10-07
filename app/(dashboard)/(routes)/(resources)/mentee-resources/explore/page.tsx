@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import { newResources, resourceLinks } from "./constants";
 import Link from "next/link";
-import ResourceCard from "@/components/card/ResourceCard";
+import ResourceCard from "@/app/(dashboard)/(routes)/(resources)/mentee-resources/explore/ResourceCard";
 import LeftArrow from "@/public/assets/left_arr.svg";
 import RightArrow from "@/public/assets/right_arr.svg";
 import Image from "next/image";
