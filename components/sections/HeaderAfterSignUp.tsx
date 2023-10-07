@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { DashboardMenteeNavImg } from "@/public";
 import React from "react";
-import { SideBarIcons } from "@/public/assets/Icons";
-import { BulletIcon } from "@/public/SVGs";
+
+import { BulletIcon, NotifyIcon, ProfileIcon } from "@/public/SVGs";
 
 interface Steps {
   step: number;
