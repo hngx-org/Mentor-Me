@@ -47,7 +47,7 @@ export default function Button({
   return (
     <button
       {...props}
-      className={`${getVariant(variant)} ${
+      className={`${className} ${getVariant(variant)} ${
         !paddingLess &&
         "xl:w-[140px] xl:h-[42px]  md:h-[40px] md:w-[100px] w-[120px] h-[40px] "
       }  `}
