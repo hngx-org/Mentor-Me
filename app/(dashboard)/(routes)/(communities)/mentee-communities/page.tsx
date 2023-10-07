@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+// import BigMentorShipCard from "@/components/sections/mentee-communities/BigMentorShipCard"
 import MentorGrid from "@/components/sections/mentee-communities/MentorGrid"
 import Slider from "@/components/sections/mentee-communities/Slider"
 import Button from "@/components/ui/Button"
@@ -55,5 +56,6 @@ export default function MenteeCommunities() {
 
       <div className="footer h-40 w-full bg-transparent"></div>
     </div>
+
   )
 }

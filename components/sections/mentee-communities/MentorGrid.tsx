@@ -9,7 +9,8 @@ const MentorGrid = () => {
         <h2 className="  font-medium text-[24px] leading-[28.8px]  w-fit ">
           Free Mentorship Sessions
         </h2>
-        <div className="seeMore  text-Accent1 lg:font-medium lg:text-[16px] lg:leading-[25.2px] mr-6 ">
+
+        <div className="seeMore  text-Accent1 lg:font-medium lg:text-[16px] lg:leading-[25.2px] mr-6 cursor-pointer ">
           View more
         </div>
       </div>
@@ -24,12 +25,6 @@ const MentorGrid = () => {
         <MentorCard />
         <MentorCard />
       </div>
-      {/* <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:mx-[.75vw] md:mx-[1.3vw] mx-[3.5vw] ">
-        <MentorCard />
-        <MentorCard />
-        <MentorCard />
-        <MentorCard />
-      </div> */}
     </div>
   )
 }
