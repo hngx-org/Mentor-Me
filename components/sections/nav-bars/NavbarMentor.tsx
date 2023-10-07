@@ -22,18 +22,20 @@ export const NavbarMentor = ({
 			<div className="flex items-center gap-3">
 				<NotificationBingIcon />
 
-				<div className="   text-[12px] text-Neutra40  font-Hanken">
-					<p className="font-[500] text-black text-[14px]">
-						{username ? username : "Funmi Oladapo"}
-					</p>
-					<p>{jobTitle ? jobTitle : "C++ Developer"}</p>
-				</div>
-				<Image
-					src={imgSrc ? imgSrc : DashboardMenteeNavImg}
-					alt="mentor"
-					width={40}
-					height={40}
-				/>
+				<a href="/mentor-profile" className="flex items-center gap-3">
+					<div className="   text-[12px] text-Neutra40  font-Hanken">
+						<p className="font-[500] text-black text-[14px]">
+							{username ? username : "Funmi Oladapo"}
+						</p>
+						<p>{jobTitle ? jobTitle : "C++ Developer"}</p>
+					</div>
+					<Image
+						src={imgSrc ? imgSrc : DashboardMenteeNavImg}
+						alt="mentor"
+						width={40}
+						height={40}
+					/>
+				</a>
 			</div>
 		</nav>
 	);
