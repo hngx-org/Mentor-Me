@@ -5,9 +5,23 @@
 @tailwind utilities;
 
 :root {
-  --font-gladiora: "Gladiora", sans-serif;
+	--font-gladiora: "Gladiora", sans-serif;
+	--font-gladiora: "Gladiora", sans-serif;
 }
 
 * {
-  list-style-type: none;
+	list-style-type: none;
+}
+
+.hide-message-layout-scroll::-webkit-scrollbar {
+	display: none;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #000000;
+	border-radius: 5px;
 }

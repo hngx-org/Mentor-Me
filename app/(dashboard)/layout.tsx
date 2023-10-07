@@ -1,31 +1,38 @@
+"use client";
+
+import { MobileSideBar } from "@/components/sections/SideBars/MobileSiderBar";
 import SidebarMentee from "@/components/sections/SideBars/SidebarMentee";
 import SidebarMentor from "@/components/sections/SideBars/SidebarMentor";
 import { NavbarMentee } from "@/components/sections/nav-bars/NavbarMentee";
-import NavbarMentor from "@/components/sections/nav-bars/NavbarMentor";
+import { NavbarMentor } from "@/components/sections/nav-bars/NavbarMentor";
 
-import { headers } from "next/headers";
+import { usePathname, useSearchParams } from "next/navigation";
 
-const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
-	const headersList = headers();
-	const domain = headersList.get("host") || "";
-	const fullUrl = headersList.get("referer") || "";
-	const isMentee = fullUrl.includes("/mentee");
+const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
+  const pathname = usePathname();
+  const searchParams = useSearchParams().get("path");
+  const isMentee = pathname.includes("/mentee");
 
-	console.log(fullUrl);
-	console.log("===========");
-	console.log(isMentee);
-	console.log("===========");
-	return (
-		<>
-			{isMentee ? <SidebarMentee /> : <SidebarMentor />}
+  return (
+    <>
+      {isMentee ? (
+        <SidebarMentee path={searchParams} />
+      ) : (
+        <SidebarMentor path={searchParams} />
+      )}
 
-			<main className="ml-[274px]">
-				{isMentee ? <NavbarMentee /> : <NavbarMentor />}
+      <main className="lg:ml-[274px]">
+        {isMentee ? (
+          <NavbarMentee path={searchParams} />
+        ) : (
+          <NavbarMentor path={searchParams} />
+        )}
 
-				{children}
-			</main>
-		</>
-	);
+        <MobileSideBar />
+        {children}
+      </main>
+    </>
+  );
 };
 
 export default DashboardLayout;

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HeaderBeforeSignUp() {
   return (
-    <nav className="flex justify-between items-center py-5 px-9 bg-[#FFFF] cursor-pointer">
+    <nav className="flex justify-between items-center py-5 px-3 bg-[#FFFF] cursor-pointer">
       <svg
         width="195"
         height="31"
@@ -16,7 +16,7 @@ export default function HeaderBeforeSignUp() {
           fill="#000"
         />
       </svg>
-      <ul className="flex items-center gap-10  font-Hanken">
+      <ul className=" items-center gap-10  font-Hanken hidden lg:flex">
         <li className="font-[700] border-b-[3px] border-black">
           Find a Mentor
         </li>
