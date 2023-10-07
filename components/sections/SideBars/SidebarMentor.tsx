@@ -1,6 +1,8 @@
+//@ts-nocheck
 "use client";
 import { sidebarMentorLinks } from "@/constants/constants";
-import { SideBarIcons } from "@/public/assets/icons";
+import { LogoIcon, LogoutIcon, ProfileIcon, SettingIcon } from "@/public/SVGs";
+
 import Link from "next/link";
 
 export type SideBarMentorProps = {
@@ -22,13 +24,13 @@ export default function SidebarMentor({
 
 				<div>
 					<div className="w-full pl-3">
-						{light ? SideBarIcons.logo2() : SideBarIcons.LogoIcon()}
+						<LogoIcon />
 					</div>
-					<div className="mt-20 tall:mt-10">
+					<div className="mt-20">
 						<p className="  font-Inter tetx-[14px]  leading-[20.3px] font-[500]   text-Neutra30 pl-3">
 							MENU
 						</p>
-						<ul className="l px-3  py-4 tall:py-2 tall:gap-1 gap-4 cursor-pointer text-xl">
+						<ul className="l px-3  py-4  gap-4 cursor-pointer text-xl">
 							{sidebarMentorLinks.map((link) => (
 								<Link key={link.id} href={link.path} prefetch>
 									<li
@@ -40,7 +42,8 @@ export default function SidebarMentor({
 												: ""
 										} rounded-[5px] p-2 items-center`}
 									>
-										<span>{light ? link.iconLight : link.iconDark}</span>
+										<span>{link.iconDark}</span>
+
 										<span
 											className={` font-Inter tetx-[14px] font-[500] ${
 												light ? "text-[#008080]" : "text-[#fff]"
@@ -68,7 +71,7 @@ export default function SidebarMentor({
 										: ""
 								}`}
 							>
-								<span>{SideBarIcons.settingIcon()}</span>
+								<SettingIcon />
 								<span
 									className={` font-Inter tetx-[11px] font-[500]  rounded-[5px] p-2 text-white`}
 								>
@@ -77,7 +80,7 @@ export default function SidebarMentor({
 							</li>
 						</Link>
 						<li className={`flex gap-3  rounded-[5px] p-2`}>
-							<span>{SideBarIcons.logoutIcon()}</span>
+							<LogoutIcon />
 							<span className="  font-Inter tetx-[11px] font-[500]  text-Error50">
 								LogOut
 							</span>
@@ -89,7 +92,7 @@ export default function SidebarMentor({
 				<div className="  bottom-0">
 					<ul className="  cursor-pointer   ">
 						<li className={`flex gap-3 items-center  p-2`}>
-							<span>{SideBarIcons.profileIcon()}</span>
+							<ProfileIcon />
 							<span className="  font-Inter tetx-[10px] font-[500]   text-Neutra30">
 								<span className={`${light ? "text-[#000]" : " text-Neutra30"}`}>
 									Funmi Oladapo
