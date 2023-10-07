@@ -17,7 +17,7 @@ export default function Qualifications({
       </p>
 
       <form className="mt-4">
-        <div className="mb-4 w-3/5  md:w-10/12">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="qualification"
@@ -38,7 +38,7 @@ export default function Qualifications({
           </select>
         </div>
 
-        <div className="mb-4 w-3/5  md:w-10/12">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="yearsExperience"
@@ -55,7 +55,7 @@ export default function Qualifications({
             <option>3 - 5 years</option>
           </select>
         </div>
-        <div className="mb-4 w-3/5  md:w-10/12">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="qualificationDesc"
@@ -72,7 +72,7 @@ export default function Qualifications({
           ></textarea>
         </div>
       </form>
-      <div className="w-3/5 md:w-10/12 flex justify-between gap-4">
+      <div className="lg:w-3/5 w-10/12 flex justify-between gap-4">
         <button
           onClick={onPrev}
           type="button"

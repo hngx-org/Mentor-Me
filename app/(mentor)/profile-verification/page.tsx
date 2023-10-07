@@ -1,5 +1,5 @@
 "use client";
-import { useState, Fragment } from "react";
+import { useState } from "react";
 import HeaderAfterSignUp from "@/components/sections/HeaderAfterSignUp";
 import SidebarMentor from "@/components/sections/SideBars/SidebarMentor";
 import amico from "../../../public/assets/images/amico.png";
@@ -19,7 +19,7 @@ import {
   RejectedStatusIcon,
   CancelIcon,
 } from "@/public/SVGs";
-import SideBar from "@/components/mentor-profile-verification/SideBarMentor";
+import { MobileSideBar } from "@/components/sections/SideBars/MobileSiderBar";
 
 export default function MentorProfileVerification() {
   const [step, setStep] = useState(0);
@@ -45,7 +45,9 @@ export default function MentorProfileVerification() {
   return (
     <>
       <div className="w-full flex">
-        <SideBar />
+        <div className="hidden lg:block">
+          <SidebarMentor />
+        </div>
         <div className="w-full">
           <HeaderAfterSignUp step={step} />
 
@@ -220,6 +222,7 @@ export default function MentorProfileVerification() {
             </div>
           </div>
         </div>
+        <MobileSideBar />
       </div>
       {showModal && <SucessModal handleClose={() => setShowModal(false)} />}
     </>

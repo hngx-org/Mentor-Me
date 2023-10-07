@@ -16,7 +16,7 @@ export default function Achievements({
       </p>
 
       <form className="mt-4">
-        <div className="mb-4 w-3/5 md:w-10/12">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="achievementName"
@@ -31,7 +31,7 @@ export default function Achievements({
           />
         </div>
 
-        <div className="mb-4 w-3/5 md:w-10/12 ">
+        <div className="mb-4 lg:w-3/5 w-10/12 ">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="issuingOrganization"
@@ -46,7 +46,7 @@ export default function Achievements({
           />
         </div>
 
-        <div className="mb-4 w-3/5 md:w-10/12">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="yearReceived"
@@ -63,7 +63,7 @@ export default function Achievements({
             <option>2021</option>
           </select>
         </div>
-        <div className="mb-4 w-3/5 md:w-10/12">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="acievementDesc"
@@ -80,7 +80,7 @@ export default function Achievements({
           ></textarea>
         </div>
       </form>
-      <div className="w-3/5 md:w-10/12 flex justify-between gap-4">
+      <div className="lg:w-3/5 w-10/12 flex justify-between gap-4">
         <button
           onClick={onPrev}
           type="button"

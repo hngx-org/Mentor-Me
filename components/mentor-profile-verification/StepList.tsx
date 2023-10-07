@@ -11,7 +11,7 @@ export default function StepList({
     <>
       <ul>
         <li
-          className={`cursor-pointer mt-8 p-2 ${
+          className={`cursor-pointer mt-8 p-2 mx-3 md:mx-0 ${
             step === 1 ? "border border-Accent1 rounded-md" : ""
           }`}
           onClick={() => {
@@ -62,7 +62,7 @@ export default function StepList({
         </li>
 
         <li
-          className={`cursor-pointer mt-8 p-2 ${
+          className={`cursor-pointer mt-8 p-2 mx-3 md:mx-0 ${
             step === 2 ? "border border-Accent1 rounded-md" : ""
           }`}
           onClick={() => {
@@ -101,7 +101,7 @@ export default function StepList({
         </li>
 
         <li
-          className={`cursor-pointer mt-8 p-2 ${
+          className={`cursor-pointer mt-8 p-2 mx-3 md:mx-0${
             step === 3 ? "border border-Accent1 rounded-md" : ""
           }`}
           onClick={() => {
@@ -143,7 +143,7 @@ export default function StepList({
         </li>
 
         <li
-          className={`cursor-pointer mt-8 p-2 ${
+          className={`cursor-pointer mt-8 p-2 mx-3 md:mx-0${
             step === 4 ? "border border-Accent1 rounded-md" : ""
           }`}
           onClick={() => {

@@ -16,7 +16,7 @@ export default function Identification({
       </p>
 
       <form className="mt-4">
-        <div className="mb-4 w-3/5 md:w-10/12">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="fullname"
@@ -31,7 +31,7 @@ export default function Identification({
           />
         </div>
 
-        <div className="mb-4 w-3/5 md:w-10/12">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="dateofBirth"
@@ -46,7 +46,7 @@ export default function Identification({
           />
         </div>
 
-        <div className="mb-4 w-3/5 md:w-10/12">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="idType"
@@ -63,7 +63,7 @@ export default function Identification({
             <option>National ID(NIN)</option>
           </select>
         </div>
-        <div className="mb-4 w-3/5 md:w-10/12">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="idNumber"
@@ -78,7 +78,7 @@ export default function Identification({
           />
         </div>
 
-        <div className="mb-4 w-3/5 md:w-10/12">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <p className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2">
             Upload Government Issued ID
           </p>
@@ -109,7 +109,7 @@ export default function Identification({
           </div>
         </div>
       </form>
-      <div className="w-3/5 md:w-10/12 flex justify-between gap-4">
+      <div className="lg:w-3/5 w-10/12 flex justify-between gap-4">
         <button
           onClick={onPrev}
           type="button"

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { DashboardMenteeNavImg } from "@/public";
 import React from "react";
 import { SideBarIcons } from "@/public/assets/icons";
 import { BulletIcon } from "@/public/SVGs";
@@ -24,7 +25,7 @@ export default function HeaderAfterSignUp({ step }: Steps) {
             <span>
               <BulletIcon />
             </span>
-            <p className="font-Hanken font-[700] text-2xl text-NeutalBase">
+            <p className="font-Hanken font-[700] md:text-2xl text-xl text-NeutalBase">
               Certifications
             </p>
           </>
@@ -35,7 +36,7 @@ export default function HeaderAfterSignUp({ step }: Steps) {
             <span>
               <BulletIcon />
             </span>
-            <p className="font-Hanken font-[700] text-2xl text-NeutalBase">
+            <p className="font-Hanken font-[700] md:text-2xl text-xl text-NeutalBase">
               Achievements & Awards
             </p>
           </>
@@ -45,7 +46,7 @@ export default function HeaderAfterSignUp({ step }: Steps) {
             <span>
               <BulletIcon />
             </span>
-            <p className="font-Hanken font-[700] text-2xl text-NeutalBase">
+            <p className="font-Hanken font-[700] md:text-2xl text-xl text-NeutalBase">
               Qualifications
             </p>
           </>
@@ -55,7 +56,7 @@ export default function HeaderAfterSignUp({ step }: Steps) {
             <span>
               <BulletIcon />
             </span>
-            <p className="font-Hanken font-[700] text-2xl text-NeutalBase">
+            <p className="font-Hanken font-[700] md:text-2xl text-xl text-NeutalBase">
               Identification
             </p>
           </>
@@ -66,7 +67,12 @@ export default function HeaderAfterSignUp({ step }: Steps) {
         <span className="md:visible invisible">{SideBarIcons.notify()}</span>
 
         <div className="flex items-center gap-2">
-          <span>{SideBarIcons.profileIcon()}</span>
+          <Image
+            src={DashboardMenteeNavImg}
+            alt="mentor"
+            width={40}
+            height={40}
+          />
           <div className="flex flex-col  font-Inter ">
             <span className=" text-[11px]">Funmi Oladapo</span>
 
