@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { DashboardMenteeNavImg } from "@/public";
 import React from "react";
-import { SideBarIcons } from "@/public/assets/icons";
+import { SideBarIcons } from "@/public/assets/Icons";
 import { BulletIcon } from "@/public/SVGs";
 
 interface Steps {

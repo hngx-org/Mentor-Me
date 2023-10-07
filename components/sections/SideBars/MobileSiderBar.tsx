@@ -6,7 +6,7 @@ import {
 } from "@/public/SVGs";
 import Link from "next/link";
 
-import { SideBarIcons } from "@/public/assets/icons";
+import { SideBarIcons } from "@/public/assets/Icons";
 
 export const MobileSideBar = () => {
   return (
