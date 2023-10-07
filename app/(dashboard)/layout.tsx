@@ -12,10 +12,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   const searchParams = useSearchParams().get("path");
   const isMentee = pathname.includes("/mentee");
 
-  console.log("===========");
-  console.log(isMentee);
-
-  console.log("===========");
+ 
   return (
     <>
       {isMentee ? <SidebarMentee path={searchParams} /> : <SidebarMentor />}

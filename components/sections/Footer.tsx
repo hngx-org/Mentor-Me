@@ -18,10 +18,6 @@ function Footer() {
 
         <div className="grid grid-cols-2 justify-items-center mt-5  w-full gap-[4.7rem]  md:grid-cols-3 xl:grid-cols-4 lg:grid-cols-4        ">
           <div className="flex flex-col gap-3">
-            {/* <p className="lg:text-[30px] lg:leading-[32px] text-[#FFFF] text-[17px]">
-              MENTOR ME
-            </p> */}
-
             <svg
               width="195"
               height="31"
