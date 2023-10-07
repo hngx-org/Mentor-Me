@@ -34,7 +34,7 @@ export default function MentorFormBuilder(props: {
 								className="w-full border-[#d0d5dd] border-[1px] rounded-md p-4 placeholder:text-[#98A2B3] "
 								type="text"
 								placeholder={input.placeholder}
-								required
+								// required
 							/>
 
 							{input.nature == "dropdown" ? (

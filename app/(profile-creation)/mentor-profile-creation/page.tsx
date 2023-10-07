@@ -373,9 +373,9 @@ import Button from "@/components/ui/Button";
 
 function SuccessModal() {
   return (
-    <div className="text-2xl flex flex-col gap-6 w-[90%] max-w-[480px] fixed left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-[20] bg-white rounded-md shadow-xl p-8">
+    <div className="text-lg sm:text-2xl flex flex-col gap-6 w-[90%] max-w-[480px] fixed left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-[20] bg-white rounded-md shadow-xl p-8">
       <div className="flex flex-col items-center">
-        <Image src={MentorCreationCheckMark} alt="checkmark" />
+        <Image src={MentorCreationCheckMark} alt="checkmark" className="max-w-[120px] sm:max-w-[initial]" />
         <p className="text-Success50 font-Inter text-center font-medium">
           Account creation successful
         </p>
