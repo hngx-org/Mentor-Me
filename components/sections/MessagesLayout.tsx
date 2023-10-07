@@ -17,9 +17,9 @@ type MessagesLayoutProps = {
 
 export default function MessagesLayout() {
   return (
-    <div className="md:h-[83dvh]  w-[100%] pl-4 pt-4 overflow-clip  lg:h-[90dvh]">
+    <div className="md:h-[83dvh]  w-[100%] pl-4 pt-4  overflow-clip lg:h-[90dvh]">
       <div className="flex w-[100%] justify-center h-[100%]">
-        <div className="border border-b-[0] rounded-t-[8px]  w-[305px] h-[100%] over">
+        <div className="border border-b-[0] rounded-t-[8px]  w-[305px] h-[100%] pb-10">
           <div className="py-5  flex flex-col space-y-5 items-center  w-[100%] ">
             <Button
               variant="primary"
@@ -29,11 +29,17 @@ export default function MessagesLayout() {
             />
             <p> search input here</p>
           </div>
-          <div className="overflow-scroll hide-message-layout-scroll h-[100%] my-4">
+          <div className="overflow-y-scroll hide-message-layout-scroll h-[85%]">
             <MessageCard userName="Patricia Flow" />
             <MessageCard userName="Mauteen" />
             <MessageCard userName="Naomi Hyde" />
             <MessageCard userName="Grace Daniels" />
+            <MessageCard userName="Nuga Olaoluwa" />
+            <MessageCard userName="Nuga Olaoluwa" />
+            <MessageCard userName="Nuga Olaoluwa" />
+            <MessageCard userName="Nuga Olaoluwa" />
+            <MessageCard userName="Nuga Olaoluwa" />
+            <MessageCard userName="Nuga Olaoluwa" />
             <MessageCard userName="Nuga Olaoluwa" />
             <MessageCard userName="Nuga Olaoluwa" />
             <MessageCard userName="Nuga Olaoluwa" />
