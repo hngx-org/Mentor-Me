@@ -1,18 +1,26 @@
 import Image from "next/image";
 import VCMessageBubble from "./vc-message-bubble";
+import {
+  AddIconCircle,
+  CallIcon,
+  MicrophoneIcon,
+  RecordIcon,
+  VideoIcon,
+} from "@/public/assets/icons";
+import { VCIconsContainer } from "./VcIconsContainer";
 
 export default function VCLayout() {
   return (
-    <div className="w-[100%] h-[90vh] flex">
-      <div className="w-[720px] h-[100%]">
-        <VCRHS />
+    <div className=" h-[90dvh] flex  w-[100%] overflow-clip ">
+      <div className="w-[65%]  h-[100%]">
+        <VCLHS />
       </div>
-      <div className=" flex-col flex1  min-w-[400px] h-[100%]">
+      <div className=" flex-col grow h-[100%] border">
         <div
           overflow-x-scroll
-          className="h-[90%] overflow-x-scroll hide-message-layout-scroll"
+          className="h-[90%] overflow-x-scroll hide-message-layout-scroll px-4"
         >
-          <VCLHS />
+          <VCRHS />
         </div>
 
         <div>
@@ -24,29 +32,47 @@ export default function VCLayout() {
 }
 
 // using bg-color for until image assets available now, -- update html element with right tag when for video streaming
-function VCRHS() {
+function VCLHS() {
   return (
-    <div className="w-[100%]  h-[100%] relative  border">
-      <div className="w-[100%] h-[100%] bg-black flex flex-col  justify-between text-white py-7">
-        <div className="w-[100%] h-[20px] flex justify-between  items-center p-7">
-          <p> Record icon</p>
-          <p> Add users icon</p>
+    <div className="w-[100%]  h-[100%]  relative ">
+      <div className="w-[100%] h-[100%] flex flex-col   justify-between text-white py-7 bg-[url('/assets/images/video-chat/vc-large.png')] bg-cover bg-no-repeat">
+        <div className="w-[100%] h-[20px] flex justify-between items-center px-5 text-xs">
+          <div className="flex items-center space-x-4">
+            <VCIconsContainer>
+              <RecordIcon />
+            </VCIconsContainer>
+            <p>Rec: 12:10:20 </p>
+          </div>
+          <div className="flex items-center space-x-2 ">
+            <VCIconsContainer>
+              <AddIconCircle color="#fff" />
+            </VCIconsContainer>
+            <p>Add users to the call </p>
+          </div>
         </div>
         <div className="w-[100%] h-[20px] flex justify-center space-x-4  items-center p-7">
-          <p> icon</p>
-          <p> icon</p>
-          <p> icon</p>
-          <p> icon</p>
+          <VCIconsContainer padding={"p-2"}>
+            <MicrophoneIcon color="white" />
+          </VCIconsContainer>
+          <VCIconsContainer padding={"p-2"}>
+            <CallIcon color="#fff" />
+          </VCIconsContainer>
+          <VCIconsContainer padding={"p-2"}>
+            <VideoIcon color="#fff" />
+          </VCIconsContainer>
+          <VCIconsContainer padding={"p-2"}>
+            <MicrophoneIcon color="white" />
+          </VCIconsContainer>
         </div>
       </div>
-      <div className="w-[148px] h-[140px] bg-red-200 absolute bottom-[100px] right-[70px] rounded-[5px]"></div>
+      <div className="w-[148px] h-[140px] absolute bottom-[100px] right-[70px] rounded-[5px] bg-[url('/assets/images/video-chat/vc-mini.png')] bg-contain"></div>
     </div>
   );
 }
 
-function VCLHS() {
+function VCRHS() {
   return (
-    <div className="py-4 w-[100%]">
+    <div className="py-4 px-2 max-w-[450px] min-w-[350px] justify-center w-[100%] ">
       <div>
         <VCMessageBubble
           message={"sent"}
@@ -56,16 +82,16 @@ function VCLHS() {
         />
 
         <VCMessageBubble
-          message={"recieved"}
+          message={"sent"}
           text="It is a pleasure meeting you."
           timeStamp="11:00am"
-          isAppended={false}
+          isAppended={true}
         />
         <VCMessageBubble
           message={"recieved"}
           text="Thank you very much joines"
           timeStamp="11:12am"
-          isAppended={true}
+          isAppended={false}
         />
         <VCMessageBubble
           message={"recieved"}
