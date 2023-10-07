@@ -1,3 +1,4 @@
+import Button from "@/components/ui/Button";
 import MessageCard from "./Message";
 import MessageBubble from "./MessageBubble";
 import MessageUserProfile from "./UserProfile";
@@ -9,10 +10,19 @@ type MessagesLayoutProps = {
 
 export default function MessagesLayout() {
   return (
-    <div className="h-[100vh] max-h-[100vh] w-[100%] pl-4 pt-4 overflow-hidden">
+    <div className="h-[90vh] max-h-[100vh] w-[100%] pl-4 pt-4 overflow-hidden">
       <div className="flex w-[100%] justify-center h-[100%]">
         <div className="border border-b-[0] rounded-t-[8px]  w-[305px] h-[100%] over">
           <div className="p-4  flex flex-col space-y-5 items-center">
+            {/* <Button
+              variant="primary"
+              type=""
+              iconPresent={true}
+              className="w-[100%] py-10"
+              paddingLess={false}
+            >
+              Write Message
+            </Button> */}
             <p> button here</p>
             <p> search input here</p>
           </div>
@@ -21,6 +31,9 @@ export default function MessagesLayout() {
             <MessageCard userName="Mauteen" />
             <MessageCard userName="Naomi Hyde" />
             <MessageCard userName="Grace Daniels" />
+            <MessageCard userName="Nuga Olaoluwa" />
+            <MessageCard userName="Nuga Olaoluwa" />
+            <MessageCard userName="Nuga Olaoluwa" />
             <MessageCard userName="Nuga Olaoluwa" />
             <MessageCard userName="Nuga Olaoluwa" />
             <MessageCard userName="Nuga Olaoluwa" />
@@ -36,7 +49,7 @@ export default function MessagesLayout() {
             />
           </div>
 
-          <div className="max-h-[70%] hide-message-layout-scroll overflow-y-scroll px-4 ">
+          <div className="max-h-[65%] hide-message-layout-scroll overflow-y-scroll px-4 ">
             <MessageBubble
               message={"sent"}
               timeStamp="2:35pm"
@@ -72,6 +85,13 @@ export default function MessagesLayout() {
               message={"recieved"}
               text="Alright, Patricia. I will do that."
               timeStamp="2:37pm"
+            />
+            <MessageBubble
+              message={"sent"}
+              timeStamp="2:35pm"
+              text="   In our next session, I will review your resume and your cv. So
+            before our next session, edit those aspects I pointed out so that we
+            can go over it together"
             />
           </div>
           <MessageLHSInput />
@@ -85,7 +105,7 @@ export default function MessagesLayout() {
 
 export function MessageLHSInput() {
   return (
-    <div className="flex w-[100%] h-[95px] bg-Neutra10">
+    <div className="flex w-[100%] h-[205px] bg-Neutra10">
       <div>
         <p> input here</p>
       </div>
