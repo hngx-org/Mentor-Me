@@ -1,9 +1,9 @@
 import React from "react"
 import { NavbarMentee } from "@/components/sections/nav-bars/NavbarMentee"
-import Header from "@/components/booking-session/Header"
 import { webInc, chickenREp, education, cert, achieve, achieve1, link } from "@/public"
 import Image from "next/image"
 import Right from "@/components/booking-session/Right"
+import Header from "@/components/booking-session/Header"
 
 export default function MenteeBooking() {
   interface IExpetise {
