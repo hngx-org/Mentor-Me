@@ -334,7 +334,7 @@ export const ClockIcon = (props?: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const UploadIcon = (props: SVGProps<SVGSVGElement>) => (
+export const UploadIcon = (props?: SVGProps<SVGSVGElement>) => (
   <svg
     width={20}
     height={20}
@@ -367,7 +367,7 @@ export const UploadIcon = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const AddIcon = (props: SVGProps<SVGSVGElement>) => (
+export const AddIcon = (props?: SVGProps<SVGSVGElement>) => (
   <svg
     width={24}
     height={24}
@@ -393,7 +393,7 @@ export const AddIcon = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const PendingStatusIcon = (props: SVGProps<SVGSVGElement>) => (
+export const PendingStatusIcon = (props?: SVGProps<SVGSVGElement>) => (
   <svg
     width={24}
     height={24}
@@ -409,7 +409,7 @@ export const PendingStatusIcon = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const ApprovedStatusIcon = (props: SVGProps<SVGSVGElement>) => (
+export const ApprovedStatusIcon = (props?: SVGProps<SVGSVGElement>) => (
   <svg
     width={24}
     height={24}
@@ -425,7 +425,7 @@ export const ApprovedStatusIcon = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const RejectedStatusIcon = (props: SVGProps<SVGSVGElement>) => (
+export const RejectedStatusIcon = (props?: SVGProps<SVGSVGElement>) => (
   <svg
     width={24}
     height={24}
@@ -441,7 +441,7 @@ export const RejectedStatusIcon = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const CancelIcon = (props: SVGProps<SVGSVGElement>) => (
+export const CancelIcon = (props?: SVGProps<SVGSVGElement>) => (
   <svg
     width={24}
     height={24}
@@ -459,7 +459,7 @@ export const CancelIcon = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const BulletIcon = (props: SVGProps<SVGSVGElement>) => (
+export const BulletIcon = (props?: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={32}
@@ -471,7 +471,7 @@ export const BulletIcon = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const SmallBulletIcon = (props: SVGProps<SVGSVGElement>) => (
+export const SmallBulletIcon = (props?: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={14}
