@@ -1,17 +1,23 @@
-("use client");
+"use client";
+//  This component accepts 2 components : 1. MentorFormBuilder 2. MentorProgressBar
+// The MentorFormBuilder renders the forms for each screen, while accepting data from the formData.js file
+// The MentorProgressBar renders the progress bar in each screen based on a state variable called currForm
+// The left side of the screen houses an svg element and a Container div which has the 5 forms. Each form is shown based on the state of currForm
+// The Container div has 5 divs, in which each div houses the heading, progressbar and the form itself
+
 import React from "react";
 import { useEffect, useRef, useState } from "react";
-import profile from "../../../public/assets/images/profile.png";
 import formData from "./formData";
 import Image from "next/image";
 import styles from "./page.module.css";
-import topEllipse from "../../../public/assets/images/ellipse-top.png";
-import bottomEllipse from "../../../public/assets/images/ellipse-bottom.png";
-import woman from "../../../public/assets/images/mentor-creation-woman.png";
-import man from "../../../public/assets/images/mentor-creation-man.png";
-import plus from "../../../public/assets/images/mentor-plus-icon.svg";
 import MentorFormBuilder from "@/components/ui/MentorFormBuilder";
 import MentorProgressBar from "@/components/ui/MentorProgressBar";
+import { MentorCreationProfileIcon } from "@/public";
+import { MentorCreationPlusIcon } from "@/public";
+import { MentorCreationTopEllipse } from "@/public";
+import { MentorCreationBottomEllipse } from "@/public";
+import { MentorCreationWoman } from "@/public";
+import { MentorCreationMan } from "@/public";
 
 const form1Arr = formData[0];
 const form2Arr = formData[1];
@@ -41,11 +47,13 @@ export default function MentorProfileCreation() {
       form.style.opacity = "0";
       form.style.transition = `0.5s ease`;
       form.style.position = "absolute";
+      form.style.pointerEvents = "none";
 
       if (form.style.transform == "translateX(0%)") {
         form.style.opacity = "1";
         form.style.position = "relative";
         form.style.left = "0";
+        form.style.pointerEvents = "all";
       }
     });
   }, [currForm]);
@@ -74,7 +82,7 @@ export default function MentorProfileCreation() {
   return (
     // Overall container for the whole page
     <div className={`flex ${styles.scroll}`}>
-      {/* right side with forms */}
+      {/* left side with forms */}
       <div className="flex flex-col w-[50%] relative max-h-[100vh]">
         {/* mentor me logo */}
         <svg
@@ -110,7 +118,7 @@ export default function MentorProfileCreation() {
               {/* container for selecting a file from pc */}
               <div className="flex items-center">
                 <Image
-                  src={profile}
+                  src={MentorCreationProfileIcon}
                   alt="profile"
                   className="mr-[20px] max-w-[60px]"
                 />
@@ -219,7 +227,11 @@ export default function MentorProfileCreation() {
                   }}
                   className="flex items-center ml-[-7px] gap-2 text-Accent1 font-medium cursor-pointer"
                 >
-                  <Image src={plus} alt="+" className="max-w-[30px]" />
+                  <Image
+                    src={MentorCreationPlusIcon}
+                    alt="+"
+                    className="max-w-[30px]"
+                  />
                   <p>Add other educational qualifications</p>
                 </div>
               </div>
@@ -293,14 +305,14 @@ export default function MentorProfileCreation() {
       <div className="bg-black w-[50%] min-h-[100vh] pt-20 flex items-start justify-center relative overflow-hidden">
         {/* top right ellipse image */}
         <Image
-          src={topEllipse}
+          src={MentorCreationTopEllipse}
           alt="ellipse"
           className="absolute z-[2] top-0 right-0"
         />
 
         {/* bottom left ellipse image */}
         <Image
-          src={bottomEllipse}
+          src={MentorCreationBottomEllipse}
           alt="ellipse"
           className="absolute z-[2] bottom-[-15%] left-0 "
         />
@@ -311,8 +323,16 @@ export default function MentorProfileCreation() {
             Building bridges of guidance and growth
           </h2>
 
-          <Image src={man} alt="man" className="max-w-[350px] self-start" />
-          <Image src={woman} alt="woman" className="max-w-[350px] self-end" />
+          <Image
+            src={MentorCreationMan}
+            alt="man"
+            className="max-w-[350px] self-start"
+          />
+          <Image
+            src={MentorCreationWoman}
+            alt="woman"
+            className="max-w-[350px] self-end"
+          />
         </div>
       </div>
 
@@ -323,7 +343,7 @@ export default function MentorProfileCreation() {
 
 function HeadingBuild(props: any) {
   return (
-    <div className="sticky top-0 bg-white left-0  py-2 mb-4 flex flex-col">
+    <div className="sticky top-0 bg-white left-0  py-2 mb-4 flex flex-col z-[2]">
       <h2 className="font-Gladiora font-bold text-3xl mb-4">{props.content}</h2>
       <MentorProgressBar currForm={props.currForm} />
     </div>

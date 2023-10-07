@@ -1,4 +1,10 @@
-import arrDown from "../../../public/assets/images/mentor-arrow-down.svg";
+"use client";
+
+// This component renders only the forms and NOT the heading or the progressbar
+// It accepts props(from formData) that were passed down from the parent component to render the input fields in the form
+//  The buttons trigger the change of the currForm state from here using props. Which in turn changes which form is shown
+
+import { MentorCreationArrDown } from "@/public";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
@@ -16,7 +22,7 @@ export default function MentorFormBuilder(props: {
         // if the input is not a text-area, i.e every screen except screen 4, return this
         if (input.type != "textarea") {
           return (
-            <div key={input.id} className="flex flex-col gap-2 relative z-[-1]">
+            <div key={input.id} className="flex flex-col gap-2 relative z-[1]">
               <label
                 htmlFor=""
                 className="font-Inter text-Neutral60 font-[500]"
@@ -34,7 +40,7 @@ export default function MentorFormBuilder(props: {
               {input.nature == "dropdown" ? (
                 <Image
                   className="absolute right-4 translate-y-[-50%] top-[70%]"
-                  src={arrDown}
+                  src={MentorCreationArrDown}
                   alt="arrow-down"
                 />
               ) : (
