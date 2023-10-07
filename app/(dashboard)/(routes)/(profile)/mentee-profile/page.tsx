@@ -77,7 +77,7 @@ export default function MenteeProfilePage() {
 					/>
 				</div>
 			</div>
-			<div className=" flex w-full justify-center max-lg:flex-col-reverse px-4 sm:px-6 lg:px-8">
+			<div className=" flex w-full justify-center max-lg:flex-col-reverse px-4 sm:px-6 lg:px-8 lg:gap-8 xl:gap-16 2xl:gap-28">
 				<div className="flex flex-col  w-full ">
 					<div className="flex mt-10 max-lg:w-full ">
 						<div className="flex flex-col w-full ">
