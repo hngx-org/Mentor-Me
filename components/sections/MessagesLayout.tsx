@@ -3,12 +3,7 @@ import Button from "@/components/ui/Button";
 import MessageBubble from "../ui/messages/MessageBubble";
 import MessageUserProfile from "../ui/messages/UserProfile";
 import MessageCard from "../cards/MessageCard";
-import {
-  AddIconCircle,
-  DocumentIcon,
-  EmojiIcon,
-  MicrophoneIcon,
-} from "@/public/assets/icons";
+import { MenteeMessageInput } from "../ui/inputs/MenteeMessagesInput";
 
 // adjust height when nav and sidebar availabe
 type MessagesLayoutProps = {
@@ -103,7 +98,7 @@ export default function MessagesLayout() {
             can go over it together"
             />
           </div>
-          <MessageLHSInput />
+          <MenteeMessageInput />
         </div>
       </div>
     </div>
@@ -111,26 +106,3 @@ export default function MessagesLayout() {
 }
 
 // switch bg-neutra to actual color when available
-
-export function MessageLHSInput() {
-  return (
-    <div className="flex w-[100%] h-fit bg-[#efeff0] py-4 px-2 space-between items-center ">
-      <div className="h-[38px] bg-white grow rounded-full p-4 flex items-center">
-        <EmojiIcon />
-        <input
-          className=" mx-4 flex grow active:border-0 p-1 focus:outline-none"
-          placeholder="Type here..."
-        />
-        <MicrophoneIcon />
-      </div>
-      <div className="flex items-center border:none h-[38px] space-x-4 px-4">
-        <span className="p-2 bg-Neutra10 rounded-full ">
-          <DocumentIcon />
-        </span>
-        <span className="p-2 bg-Neutra10 rounded-full ">
-          <AddIconCircle />
-        </span>
-      </div>
-    </div>
-  );
-}

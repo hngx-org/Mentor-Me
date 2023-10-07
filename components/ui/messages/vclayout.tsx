@@ -8,24 +8,22 @@ import {
   VideoIcon,
 } from "@/public/assets/icons";
 import { VCIconsContainer } from "./VcIconsContainer";
+import { VCInput } from "../inputs/VCInput";
 
 export default function VCLayout() {
   return (
-    <div className=" h-[90dvh] flex  w-[100%] overflow-clip ">
+    <div className=" h-[100dvh] flex  w-[100%] overflow-clip ">
       <div className="w-[65%]  h-[100%]">
         <VCLHS />
       </div>
-      <div className=" flex-col grow h-[100%] border">
+      <div className=" flex flex-col  h-[100%] w-fit max-w-[500px]  px-6">
         <div
           overflow-x-scroll
-          className="h-[90%] overflow-x-scroll hide-message-layout-scroll px-4"
+          className="h-[80%] overflow-x-scroll hide-message-layout-scroll px-4 "
         >
           <VCRHS />
         </div>
-
-        <div>
-          <p> input here</p>
-        </div>
+        <VCInput />
       </div>
     </div>
   );
@@ -72,7 +70,7 @@ function VCLHS() {
 
 function VCRHS() {
   return (
-    <div className="py-4 px-2 max-w-[450px] min-w-[350px] justify-center w-[100%] ">
+    <div className="py-4  w-[100%] ">
       <div>
         <VCMessageBubble
           message={"sent"}

@@ -662,8 +662,8 @@ export const CallIcon = ({ color }: { color?: string }) => {
 export const CameraIcon = () => {
   return (
     <svg
-      width="32"
-      height="32"
+      width="20"
+      height="20"
       viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -744,8 +744,8 @@ export const MicrophoneIcon = ({ color }: { color?: string }) => {
 export const AttachIcon = ({ color }: { color?: string }) => {
   return (
     <svg
-      width="29"
-      height="30"
+      width="20"
+      height="20"
       viewBox="0 0 29 30"
       fill={color || "none"}
       xmlns="http://www.w3.org/2000/svg"
