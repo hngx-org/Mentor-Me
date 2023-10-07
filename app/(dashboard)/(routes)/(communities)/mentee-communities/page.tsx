@@ -1,4 +1,3 @@
-
 import Slider from "@/components/sections/mentee-communities/Slider"
 import Button from "@/components/ui/Button"
 import React from "react"
@@ -50,8 +49,7 @@ export default function MenteeCommunities() {
         ]}
       />
 
-      {/* <MentorGrid /> */}
       <div className="footer h-40 w-full bg-transparent"></div>
     </div>
-  )}
-
+  )
+}
