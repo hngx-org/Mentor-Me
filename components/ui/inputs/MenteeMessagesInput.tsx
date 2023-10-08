@@ -4,6 +4,7 @@ import {
   EmojiIcon,
   MicrophoneIcon,
 } from "@/public/SVGs";
+import { IconsContainer } from "../messages/IconsContainer";
 
 export function MenteeMessageInput() {
   return (
@@ -17,12 +18,12 @@ export function MenteeMessageInput() {
         <MicrophoneIcon />
       </div>
       <div className="flex items-center border:none h-[38px] space-x-4 px-4">
-        <span className="p-2 bg-Neutra10 rounded-full ">
+        <IconsContainer style="p-2 bg-Neutra10 rounded-full">
           <DocumentIcon />
-        </span>
-        <span className="p-2 bg-Neutra10 rounded-full ">
+        </IconsContainer>
+        <IconsContainer style="p-2 bg-Neutra10 rounded-full">
           <AddIconCircle />
-        </span>
+        </IconsContainer>
       </div>
     </div>
   );

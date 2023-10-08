@@ -1,6 +1,6 @@
 import VCMessageBubble from "./vc-message-bubble";
 
-import { VCIconsContainer } from "./VcIconsContainer";
+import { IconsContainer } from "./IconsContainer";
 import { VCInput } from "../inputs/VCInput";
 import {
   RecordIcon,
@@ -36,35 +36,31 @@ function VCLHS() {
       <div className="w-[100%] h-[100%] flex flex-col   justify-between text-white py-7 bg-[url('/assets/images/video-chat/vc-large.png')] bg-cover bg-no-repeat">
         <div className="w-[100%] h-[20px] flex justify-between items-center px-5 text-xs">
           <div className="flex items-center space-x-4">
-            <VCIconsContainer>
+            <IconsContainer style="border rounded-full p-0.5">
               <RecordIcon />
-            </VCIconsContainer>
+            </IconsContainer>
             <p>Rec: 12:10:20 </p>
           </div>
           <div className="flex items-center space-x-2 ">
-            <VCIconsContainer>
+            <IconsContainer style="border rounded-full p-0.5">
               <AddIconCircle color="#fff" />
-            </VCIconsContainer>
+            </IconsContainer>
             <p>Add users to the call </p>
           </div>
         </div>
         <div className="w-[100%] h-[20px] flex justify-center space-x-4  items-center p-7">
-          <VCIconsContainer padding={"p-2"}>
+          <IconsContainer style="border p-2 rounded-full ">
             <MicrophoneIcon color="white" />
-          </VCIconsContainer>
-          <VCIconsContainer
-            padding={"p-2"}
-            bgColor="ErrorBase"
-            border="border border-[4px] border-ErrorBase"
-          >
+          </IconsContainer>
+          <IconsContainer style="border p-2.5 border-ErrorBase bg-ErrorBase rounded-full">
             <CallIcon color="#fff" />
-          </VCIconsContainer>
-          <VCIconsContainer padding={"p-2"}>
+          </IconsContainer>
+          <IconsContainer style="border rounded-full p-2">
             <VideoIcon color="#fff" />
-          </VCIconsContainer>
-          <VCIconsContainer padding={"p-2"}>
+          </IconsContainer>
+          <IconsContainer style=" border rounded-full p-2">
             <MicrophoneIcon color="white" />
-          </VCIconsContainer>
+          </IconsContainer>
         </div>
       </div>
       <div className="w-[148px] h-[140px] absolute bottom-[100px] right-[70px] rounded-[5px] bg-[url('/assets/images/video-chat/vc-mini.png')] bg-contain"></div>
