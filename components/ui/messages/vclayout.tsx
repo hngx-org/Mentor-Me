@@ -17,10 +17,7 @@ export default function VCLayout() {
         <VCLHS />
       </div>
       <div className=" flex flex-col  h-[100%] w-fit max-w-[500px]  px-6">
-        <div
-          overflow-x-scroll
-          className="h-[80%] overflow-x-scroll hide-message-layout-scroll px-4 "
-        >
+        <div className="h-[80%] overflow-scroll hide-message-layout-scroll px-4 ">
           <VCRHS />
         </div>
         <VCInput />
