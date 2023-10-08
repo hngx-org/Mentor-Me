@@ -198,7 +198,7 @@ export default formData;
 export const sidebarMenteeLinks: SidebarLinksProps[] = [
 	{
 		id: 1,
-		path: "/mentee-profile?path=home",
+		path: "/mentee-profile?path=home&tab=overview",
 		label: "Home",
 		iconDark: HomeIcon(),
 	},
