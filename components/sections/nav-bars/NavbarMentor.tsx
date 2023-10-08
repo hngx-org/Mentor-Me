@@ -3,24 +3,26 @@ import { NotificationBingIcon } from "@/public/SVGs";
 import Image from "next/image";
 
 export type NavbarMentorProps = {
-	path?: string | null;
-	username?: string;
-	imgSrc?: string;
-	jobTitle?: string;
+  path?: string | null;
+  username?: string;
+  imgSrc?: string;
+  jobTitle?: string;
+  step?: number;
 };
 export const NavbarMentor = ({
-	path,
-	username,
-	imgSrc,
-	jobTitle,
+  path,
+  username,
+  imgSrc,
+  jobTitle,
+  step,
 }: NavbarMentorProps) => {
-	return (
-		<nav className="flex w-full justify-between px-3 items-center  py-4 border-b-2 border-gray-200 row-start-1 row-end-2 col-start-2 col-end-3">
-			<h3 className="uppercase  font-Hanken font-[700] text-[24px]">
-				{path ? path : "[PathName Here]"}
-			</h3>
-			<div className="flex items-center gap-3">
-				<NotificationBingIcon />
+  return (
+    <nav className="flex w-full justify-between px-3 items-center  py-4 border-b-2 border-gray-200 row-start-1 row-end-2 col-start-2 col-end-3">
+      <h3 className="uppercase  font-Hanken font-[700] text-[24px]">
+        {path ? path : "[PathName Here]"}
+      </h3>
+      <div className="flex items-center gap-3">
+        <NotificationBingIcon />
 
 				<a href="/mentor-profile" className="flex items-center gap-3">
 					<div className="   text-[12px] text-Neutra40  font-Hanken">
@@ -39,4 +41,3 @@ export const NavbarMentor = ({
 			</div>
 		</nav>
 	);
-};
