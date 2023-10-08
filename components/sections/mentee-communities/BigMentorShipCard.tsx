@@ -57,15 +57,23 @@ const BigMentorShipCard = () => {
 					discussions. Learn the basics from industry experts.
 				</div>
 
-				<Button
-					variant="primary"
-					className="text-[10px] px-10 py-5 "
-					type="button"
-					title="Join Classroom"
-				/>
-			</div>
-		</div>
-	);
+
+        <Button
+          variant="primary"
+          className="text-[10px] px-10 py-5 "
+
+          iconPresent={false}
+          type="button"
+        >
+          Join Classroom
+        </Button>
+
+      </div>
+    </div>
+  )
+}
+
 };
+
 
 export default BigMentorShipCard;
