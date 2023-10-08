@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <section className=" bg-Neutral60     flex justify-center items-center w-full lg:p-8 py-10 px-3">
+    <section className=" bg-Neutral60  fixed bottom-0 z-10     flex justify-center items-center w-full lg:p-8 py-10 px-3">
       <div className="w-[90%] flex flex-col gap-4 ">
         <h2 className="font-[500] text-[18px]  leading-[21.6px] text-[#FFFFFF]">
           Join The List of MentorMe Subscribers
