@@ -40,5 +40,7 @@ export const NavbarMentor = ({
 				</a>
 			</div>
 		</nav>
+
 	)
 };
+
