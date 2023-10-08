@@ -90,7 +90,7 @@ export default function MenteeBooking() {
           </p>
           <div className="flex-grow border-t border-Neutra30"></div>
           <div className="flex gap-8">
-            <p className="font-Inter font-medium text-right">Overview</p>
+            <p className="font-Inter font-medium text-righ border-b-2 border-Accent1 ">Overview</p>
             <p className="font-Inter font-medium text-right">
               Reviews{" "}
               <span className="font-Hanken text-sm font-bold bg-Accent1 rounded-full text-white px-2 py-1">
