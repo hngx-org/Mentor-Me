@@ -2,7 +2,7 @@
 // eslint-disable prettier/prettier
 import MentorGrid from "@/components/sections/mentee-communities/MentorGrid"
 import Slider from "@/components/sections/mentee-communities/Slider"
-import Button from "@/components/ui/Button"
+
 import React from "react"
 
 export default function MenteeCommunities() {
@@ -13,14 +13,13 @@ export default function MenteeCommunities() {
           Join group discussions and connect with mentors in free classrooms
           with Mentor me
         </p>
-        <div className="search h-[58px] max-w-[60%] w-[610px] border border-NeutalBase rounded-[8px] ">
-          <input
-            type="text"
-            className=" border-black border "
-            placeholder="Search community"
-          />
-          <Button className="searchButton" title="Search" variant="primary" />
-        </div>
+      </div>
+      <div className="search border border-[#CCCCCC] max-w-[40%] w-[360px] md:py-2 md:px-3 p-[16px] rounded-[6px] ml-[2vw] ">
+        <input
+          type="text"
+          className=" text-[14px] font-normal leading-[20.3px] text-Neutra20 w-full font-Inter outline-0 "
+          placeholder="Search for community"
+        />
       </div>
 
       <Slider

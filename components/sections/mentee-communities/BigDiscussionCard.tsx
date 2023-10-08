@@ -12,9 +12,9 @@ type Props = {
 
 const BigDiscussionCard: React.FC<Props> = ({ mentor }) => {
   return (
-    <div className="bigDiscussioncard flex border py-4 pl-4 pr-[30px] rounded-[10px] gap-x-9">
+    <div className="bigDiscussioncard flex flex-col lg:flex-row border py-4 pl-4 pr-[30px] rounded-[10px] gap-x-9 gap-y-4">
       {mentor && (
-        <div className="image overflow-hidden aspect-square w-[295px] rounded-[10px] flex flex-shrink-0">
+        <div className="image overflow-hidden aspect-square lg:w-[295px] w-[320px] rounded-[10px] flex flex-shrink-0">
           <Image
             alt="members"
             src={bigDiscussionCardHero}
@@ -25,18 +25,18 @@ const BigDiscussionCard: React.FC<Props> = ({ mentor }) => {
         </div>
       )}
 
-      <div className="info flex flex-col gap-5">
+      <div className="info flex flex-col lg:gap-5 gap-2">
         <div className="w-fit flex gap-1 flex-col justify-center text-left">
-          <div className="flex gap-4 items-center">
+          <div className="flex lg:gap-4 gap-2 items-center">
             <Image
               alt="members"
               src={mentorCardAvatar}
               width={37}
               height={37}
-              className="block xl:w-[37px] xl:h-[37px] w-[12px] h-[12px]"
+              className="block lg:w-[37px] lg:h-[37px] w-[24px] h-[24px]"
             />
             <div className="">
-              <p className="text-NeutalBase font-semibold xl:text-[18px] text-[12px] leading-[14px]  mb-2">
+              <p className="text-NeutalBase font-semibold lg:text-[18px] text-[14px] leading-[20px]  lg:mb-2">
                 Shade Mayowa
               </p>
               <p className="text-Neutra30 font-normal lg:text-xs text-[10px]">
@@ -46,10 +46,10 @@ const BigDiscussionCard: React.FC<Props> = ({ mentor }) => {
           </div>
         </div>
         <div className="text flex flex-col gap-2">
-          <div className="topic font-medium lg:text-[24px] text-[12px] lg:leading-[28.8px] leading-[16px]">
+          <div className="topic font-medium lg:text-[24px] text-[14px] lg:leading-[28.8px] leading-[20px]">
             My take on Augmented Reality (AR)
           </div>
-          <div className="desc font-normal lg:text-[17px] lg:leading-[21.6px] text-[10px] leading-[12px] ">
+          <div className="desc font-normal lg:text-[17px] lg:leading-[21.6px] text-[12px] leading-[14.4px] ">
             AR enhances our everyday experiences by overlaying digital elements
             onto the real world. Through AR, your smartphone becomes a window to
             a new dimension. Imagine exploring a historic city, and with a
@@ -58,21 +58,46 @@ const BigDiscussionCard: React.FC<Props> = ({ mentor }) => {
             gaming, and even shopping, making the ordinary extraordinary.
           </div>
         </div>{" "}
-        <div className="buttons flex gap-5">
-          <Button
-            variant="secondary"
-            className="text-[10px] whitespace-nowrap px-[12px]   py-[10px]  text-Accent1 bg-Accent6 border-0"
-            type="button"
-            title="14 Comments"
-            icon={messageIcon}
-          />
-          <Button
-            variant="secondary"
-            className="text-[10px] whitespace-nowrap px-[12px]   py-[10px] text-Accent1 bg-Accent6 border-0"
-            type="button"
-            title="14 Comments"
-            icon={sendIcon}
-          />
+        <div className="largeButton lg:flex hidden ">
+          {" "}
+          <div className="buttons gap-5 flex">
+            <Button
+              variant="secondary"
+              className="text-[10px] whitespace-nowrap px-[12px]   py-[10px]  text-Accent1 bg-Accent6 border-0"
+              type="button"
+              title="14 Comments"
+              icon={messageIcon}
+            />
+            <Button
+              variant="secondary"
+              className="text-[10px] whitespace-nowrap px-[12px]   py-[10px] text-Accent1 bg-Accent6 border-0"
+              type="button"
+              title="Share"
+              icon={sendIcon}
+            />
+          </div>
+        </div>
+        <div className="smallButton lg:hidden flex mt-2 ">
+          <div className="buttons gap-2 flex">
+            <Button
+              variant="secondary"
+              className="text-[8px]  flex whitespace-nowrap px-[8px] gap-x-[1px]  py-[4px]  text-Accent1 bg-Accent6 border-0"
+              type="button"
+              title="14 Comments"
+              icon={messageIcon}
+              iconHeight={15}
+              iconWidth={15}
+            />
+            <Button
+              variant="secondary"
+              className="text-[8px]  flex whitespace-nowrap px-[8px] gap-x-[1px]  py-[4px]  text-Accent1 bg-Accent6 border-0"
+              type="button"
+              iconHeight={15}
+              iconWidth={15}
+              title="Share"
+              icon={sendIcon}
+            />
+          </div>
         </div>
       </div>
     </div>

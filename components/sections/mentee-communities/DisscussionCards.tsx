@@ -13,7 +13,7 @@ type Props = {
 
 const DiscussionCards: React.FC<Props> = ({ title, members, desc, id = 1 }) => {
   return (
-    <div className="discussioncard lg:pt-4 lg:px-[19px] lg:pb-[30px] px-2 py-4 border border-Neutra10 lg:rounded-[8px] rounded-[6.2px] justify-center items-center flex flex-col flex-shrink-0 gap-2 xl:w-[268px]  md:w-[20vw] w-[32vw]  ">
+    <div className="discussioncard lg:pt-4 lg:px-[19px] lg:pb-[30px] px-2 py-4 border border-Neutra10 lg:rounded-[8px] rounded-[6.2px] justify-center items-center flex flex-col flex-shrink-0 gap-2 xl:w-[268px]  md:w-[23vw] w-[45vw] md:min-h-[220px]  h-fit  ">
       <div className="text flex flex-col xl:gap-[14px] gap-2 font-Hanken xl:mb-[45px] text-left">
         <p className=" text-NeutalBase font-semibold xl:text-[24px] text-[14px] leading-[28.8px]  ">
           {title}
@@ -43,9 +43,9 @@ const DiscussionCards: React.FC<Props> = ({ title, members, desc, id = 1 }) => {
       <Link href="/mentee-communities/forums">
         <Button
           variant="secondary"
-          className="text-[10px]  lg:px-[5rem] whitespace-nowrap   px-6 py-3 "
+          className="text-[10px]  lg:px-[5rem] whitespace-nowrap   px-6 py-3  md:mt-3 mt-0"
           type="button"
-          title="Join Classroom"
+          title="Join Discussion"
         />
       </Link>
     </div>

@@ -4,6 +4,7 @@ import React, { useState } from "react"
 import DiscussionCards from "./DisscussionCards"
 // import Image from "next/image"
 import styles from "./mentorpage.module.css"
+import Link from "next/link"
 // import { ArrowLeftIcon, ArrowRigthIcon } from "@/public/SVGs"
 
 type Props = { slideInfo: string[] }
@@ -46,9 +47,11 @@ text-NeutalBase font-Inter overflow-hidden "
             onClick={handleNextClick}
           />
         </div> */}
-        <div className="seeMore  text-Accent1 lg:font-medium lg:text-[16px] lg:leading-[25.2px] mr-4 ">
-          View more
-        </div>
+        <Link href="/mentee-communities/mentorship">
+          <div className="seeMore  text-Accent1 lg:font-medium lg:text-[16px] lg:leading-[25.2px] mr-4 ">
+            View more
+          </div>
+        </Link>
       </div>
 
       <h2 className=" title-small  w-fit lg:hidden flex font-semibold   text-[16px] md:text-[20px] leading-[20px] pb-[15px]    ">
@@ -70,6 +73,7 @@ text-NeutalBase font-Inter overflow-hidden "
           >
             {/* {item} */}
             <DiscussionCards
+              id={Number(Date.now()) + index}
               title={"Memeber Math"}
               members={13}
               desc="Connect with industry-leading mentors in science and technology. Explore the cutting edge together."

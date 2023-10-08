@@ -5,6 +5,7 @@ import { mentorCardHero, mentorCardAvatar } from "@/public"
 import Image from "next/image"
 import { CalenderIcon, ClockIcon, IconVerfied } from "@/public/SVGs"
 import Button from "@/components/ui/Button"
+import Link from "next/link"
 
 const MentorCard = () => {
   return (
@@ -58,13 +59,14 @@ const MentorCard = () => {
           </div>
           <div className="border-b border-Neutra10 border-[.5px] " />
         </div>
-
-        <Button
-          variant="secondary"
-          className="text-[10px] whitespace-nowrap lg:px-[32px]  px-6 py-[14.5px] xl:max-w-[230px] xl:w-[230px] lg:max-w-[230px] lg:w-[230px] md:max-w-[70%] md:w-[70%] max-w-[70%] w-[70%] "
-          type="button"
-          title="Join Classroom"
-        />
+        <Link href="/mentee-communities/forums">
+          <Button
+            variant="secondary"
+            className="text-[10px] whitespace-nowrap lg:px-[32px]  px-[50px] py-[10px] xl:max-w-[230px] xl:w-[230px] lg:max-w-[230px] lg:w-[230px] md:max-w-[70%] md:w-[70%] max-w-[70%] w-[70%] mx-auto"
+            type="button"
+            title="Join Classroom"
+          />
+        </Link>
       </div>
     </div>
   )
