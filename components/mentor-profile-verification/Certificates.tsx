@@ -6,7 +6,7 @@ export default function Certificates({
   onNext,
 }: ButtonControlProps): ReactElement {
   return (
-    <div className="pt-6 ml-24">
+    <div className="pt-6 md:ml-10 ml-3 md:flex md:flex-col">
       <h1 className="font-Hanken font-[600] text-[24px] text-[Neutra40]">
         Certifications & Diplomas
       </h1>
@@ -16,7 +16,7 @@ export default function Certificates({
       </p>
 
       <form className="mt-4">
-        <div className="mb-4 w-3/5">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="certificationName"
@@ -31,7 +31,7 @@ export default function Certificates({
           />
         </div>
 
-        <div className="mb-4 w-3/5">
+        <div className="mb-4lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="issuingInstitution"
@@ -46,7 +46,7 @@ export default function Certificates({
           />
         </div>
 
-        <div className="mb-4 w-3/5">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="graduationYear"
@@ -64,7 +64,7 @@ export default function Certificates({
           </select>
         </div>
 
-        <div className="mb-4 w-3/5">
+        <div className="mb-4lg:w-3/5 w-10/12">
           <p className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2">
             Upload Certificate/Diploma
           </p>
@@ -102,7 +102,7 @@ export default function Certificates({
       <button
         onClick={onNext}
         type="button"
-        className="mt-5 bg-NeutalBase text-white py-2 px-12 rounded-md font-Inter font-500 text-[16px]"
+        className=" lg:w-3/5 w-10/12 mt-5 bg-NeutalBase text-white py-2 px-12 rounded-md font-Inter font-500 text-[16px]"
       >
         Next
       </button>
