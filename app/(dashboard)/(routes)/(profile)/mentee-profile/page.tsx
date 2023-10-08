@@ -10,7 +10,7 @@ import { EditIcon, NaijaFlagIcon } from "@/public/SVGs";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 
 type MenuProfileProps = {
 	id: number;
@@ -36,8 +36,14 @@ const menteeMenus: MenuProfileProps[] = [
 ];
 
 export default function MenteeProfilePage() {
-	const [activeTab, setActiveTab] = useState("overview");
+	const [activeTab, setActiveTab] = useState("");
 	const router = useRouter();
+const params = useSearchParams().get('tab')
+
+useEffect(()=>{
+
+setActiveTab(params)
+},[params])
 
 
 	return (
