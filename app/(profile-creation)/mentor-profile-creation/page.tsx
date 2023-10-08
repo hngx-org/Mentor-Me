@@ -302,7 +302,7 @@ export default function MentorProfileCreation() {
               <div className="flex items-center justify-start gap-2">
                 <input type="checkbox" className="mt-[6px]" />
                 <p className="font-medium font-Inter ">
-                  By filling this form, you agree to MentorMe’s{" "}
+                  By filling this form, you agree to MentorMes{" "}
                   <span className="text-Accent1">Privacy policy</span> and{" "}
                   <span className="text-Accent1">Terms of use</span>.
                 </p>
@@ -391,7 +391,7 @@ function SuccessModal() {
           title="Verify account"
           className="w-full py-2 xl:max-w-[initial]"
         />
-        <p className="text-base font-Hanken text-center">I'll do this later</p>
+        <p className="text-base font-Hanken text-center">I will do this later</p>
       </div>
     </div>
   );
