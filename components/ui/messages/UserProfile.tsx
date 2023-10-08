@@ -1,3 +1,4 @@
+import { VideoIcon, CallIcon } from "@/public/SVGs";
 import Image from "next/image";
 type MessageUserProfileProps = {
   userImage: string;
@@ -23,9 +24,9 @@ export default function MessageUserProfile(props: MessageUserProfileProps) {
           </p>
         </div>
 
-        <div className="flex justify-between space-x-4">
-          <p> video icon</p>
-          <p> call icon</p>
+        <div className="flex justify-between space-x-4 items-center">
+          <VideoIcon />
+          <CallIcon />
         </div>
       </div>
     </div>
