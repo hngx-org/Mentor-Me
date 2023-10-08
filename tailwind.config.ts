@@ -8,9 +8,6 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
-			screens: {
-				tall: { raw: "(max-height: 1000px)" },
-			},
 			colors: {
 				NeutalBase: "#020202",
 				Neutral60: "#2A2A2A",

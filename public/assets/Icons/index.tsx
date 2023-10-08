@@ -554,7 +554,6 @@ export const activeHomeIcon = (props?: SVGProps<SVGSVGElement>) => {
     </svg>
   );
 };
-
 export const SideBarIcons = {
   homeIcon,
   messagesIcon,

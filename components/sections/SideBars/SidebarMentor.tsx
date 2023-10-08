@@ -26,11 +26,11 @@ export default function SidebarMentor({
 					<div className="w-full pl-3">
 						<LogoIcon />
 					</div>
-					<div className="mt-20 tall:mt-10">
+					<div className="mt-20">
 						<p className="  font-Inter tetx-[14px]  leading-[20.3px] font-[500]   text-Neutra30 pl-3">
 							MENU
 						</p>
-						<ul className="l px-3  py-4 tall:py-2 tall:gap-1 gap-4 cursor-pointer text-xl">
+						<ul className="l px-3  py-4  gap-4 cursor-pointer text-xl">
 							{sidebarMentorLinks.map((link) => (
 								<Link key={link.id} href={link.path} prefetch>
 									<li
