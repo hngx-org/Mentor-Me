@@ -7,16 +7,16 @@ export default function Identification({
   handleSubmit,
 }: ButtonControlProps): ReactElement {
   return (
-    <div className="pt-6 ml-24">
+    <div className="pt-6 md:ml-10 ml-3  md:flex md:flex-col">
       <h1 className="font-Hanken font-[600] text-[24px] text-[Neutra40]">
         Identification
       </h1>
-      <p className="font-Hanken text-[14px] font-[400] text-Neutra40 pr-7">
+      <p className="font-Hanken text-[14px] font-[400] text-Neutra40 ">
         Please provide the required details below for identity verification.
       </p>
 
       <form className="mt-4">
-        <div className="mb-4 w-3/5">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="fullname"
@@ -31,7 +31,7 @@ export default function Identification({
           />
         </div>
 
-        <div className="mb-4 w-3/5">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="dateofBirth"
@@ -46,7 +46,7 @@ export default function Identification({
           />
         </div>
 
-        <div className="mb-4 w-3/5">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="idType"
@@ -63,7 +63,7 @@ export default function Identification({
             <option>National ID(NIN)</option>
           </select>
         </div>
-        <div className="mb-4 w-3/5">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <label
             className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2"
             htmlFor="idNumber"
@@ -78,7 +78,7 @@ export default function Identification({
           />
         </div>
 
-        <div className="mb-4 w-3/5">
+        <div className="mb-4 lg:w-3/5 w-10/12">
           <p className="font-Inter font-[500] text-NeutalBase text-[14px] mb-2">
             Upload Government Issued ID
           </p>
@@ -109,7 +109,7 @@ export default function Identification({
           </div>
         </div>
       </form>
-      <div className="w-3/5 flex justify-between gap-4">
+      <div className="lg:w-3/5 w-10/12 flex justify-between gap-4">
         <button
           onClick={onPrev}
           type="button"

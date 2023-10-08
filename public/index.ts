@@ -16,6 +16,7 @@ export {default as MentorCreationWoman } from "./assets/images/mentor-profile-cr
 export {default as MentorCreationMan } from "./assets/images/mentor-profile-creation/mentor-creation-man.png"
 export {default as MentorCreationPlusIcon } from "./assets/images/mentor-profile-creation/mentor-plus-icon.svg"
 export {default as MentorCreationArrDown } from "./assets/images/mentor-profile-creation/mentor-arrow-down.svg"
+export {default as MentorCreationCheckMark } from "./assets/images/mentor-profile-creation/mentor-checkmark.svg"
 
 // Image and icons import and export for mentor profile dashboard
 export {default as Awards } from "./assets/Icons/awards-icon.png"

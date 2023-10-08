@@ -38,7 +38,7 @@ const menteeMenus: MenuProfileProps[] = [
 export default function MenteeProfilePage() {
 	const [activeTab, setActiveTab] = useState("overview");
 	const router = useRouter();
-	const searchParams = useSearchParams().get("tab");
+
 
 	return (
 		<section className="w-full max-lg:pb-16">
@@ -99,7 +99,7 @@ export default function MenteeProfilePage() {
 									</p>
 								))}
 							</div>
-							{searchParams === "overview" && (
+							{activeTab === "overview" && (
 								<OverviewCard
 									desc="I'm Henrietta Okonkwo, a rising star in the world of product
 								design. I bring to the table a deep-seated passion for innovation and
@@ -114,8 +114,8 @@ export default function MenteeProfilePage() {
 									workPlace="Federal University of Science Technology, Owerri"
 								/>
 							)}
-							{searchParams === "my-mentors" && <MyMentorsCard />}
-							{searchParams === "commendations" && <Commendations />}
+							{activeTab === "my-mentors" && <MyMentorsCard />}
+							{activeTab === "commendations" && <Commendations />}
 						</div>
 					</div>
 				</div>

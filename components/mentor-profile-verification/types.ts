@@ -9,4 +9,5 @@ export interface ButtonControlProps {
 export interface StepListProps {
   step: number;
   setStep: React.Dispatch<React.SetStateAction<number>>;
+  formSubmitted: boolean;
 }

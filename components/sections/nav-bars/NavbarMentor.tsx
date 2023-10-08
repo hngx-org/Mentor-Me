@@ -7,12 +7,14 @@ export type NavbarMentorProps = {
 	username?: string;
 	imgSrc?: string;
 	jobTitle?: string;
+	step?: number;
 };
 export const NavbarMentor = ({
 	path,
 	username,
 	imgSrc,
 	jobTitle,
+	step,
 }: NavbarMentorProps) => {
 	return (
 		<nav className="flex w-full justify-between px-3 items-center  py-4 border-b-2 border-gray-200 row-start-1 row-end-2 col-start-2 col-end-3">
@@ -38,5 +40,5 @@ export const NavbarMentor = ({
 				</a>
 			</div>
 		</nav>
-	);
+	)
 };
