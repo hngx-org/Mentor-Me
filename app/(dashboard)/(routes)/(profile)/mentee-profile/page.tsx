@@ -97,7 +97,7 @@ setActiveTab(params)
 										}`}
 										key={menu.id}
 										onClick={() => {
-											router.push(`?tab=${menu.tab}`);
+											router.push(`?path=home&tab=${menu.tab}`);
 											setActiveTab(menu.tab);
 										}}
 									>
